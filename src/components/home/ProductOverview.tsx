@@ -48,11 +48,11 @@ const ProductOverview = () => {
               key={index}
               className="group bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100 hover:border-duo-yellow transition-all duration-300 flex flex-col h-full"
             >
-              <div className="p-4 bg-duo-blue">
+              <div className="p-6 bg-white">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-48 object-contain mix-blend-lighten"
+                  className="w-full h-48 object-contain"
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">

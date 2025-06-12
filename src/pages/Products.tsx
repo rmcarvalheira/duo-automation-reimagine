@@ -88,11 +88,11 @@ const Products = () => {
                 className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}
               >
                 <div className="md:w-1/2">
-                  <div className="bg-duo-blue p-6 rounded-lg">
+                  <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
                     <img 
                       src={product.image} 
                       alt={product.name} 
-                      className="w-full h-auto mix-blend-lighten"
+                      className="w-full h-auto object-contain max-h-80"
                     />
                   </div>
                 </div>

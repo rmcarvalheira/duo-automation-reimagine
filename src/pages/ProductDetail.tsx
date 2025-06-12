@@ -156,11 +156,11 @@ const ProductDetail = () => {
             </div>
             
             <div className="md:w-1/2">
-              <div className="bg-duo-blue p-6 rounded-lg">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
                 <img 
                   src={product.image} 
                   alt={product.name} 
-                  className="w-full h-auto mix-blend-lighten"
+                  className="w-full h-auto object-contain max-h-80"
                 />
               </div>
             </div>
