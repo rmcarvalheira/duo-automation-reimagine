@@ -12,6 +12,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Clients from "./pages/Clients";
 import Solutions from "./pages/Solutions";
 import Contact from "./pages/Contact";
+import VideoUploadPage from "./pages/VideoUploadPage";
 import NotFound from "./pages/NotFound";
 
 import Navbar from "./components/Navbar";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/clientes" element={<Clients />} />
           <Route path="/solucoes" element={<Solutions />} />
           <Route path="/contato" element={<Contact />} />
+          <Route path="/videos" element={<VideoUploadPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
