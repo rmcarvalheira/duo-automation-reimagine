@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import VideoBackground from '../VideoBackground';
 
 const Hero = () => {
   return (
@@ -8,13 +8,9 @@ const Hero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-duo-blue/70 z-10"></div>
-        <iframe 
-          src="https://www.youtube.com/embed/w2hNqVOlen8?autoplay=1&mute=1&loop=1&playlist=w2hNqVOlen8&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
-          className="w-full h-full object-cover"
-          style={{ minHeight: '100vh' }}
-          frameBorder="0"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
+        <VideoBackground 
+          src="/lovable-uploads/hero-video.mp4"
+          fallbackSrc="/lovable-uploads/hero-video.webm"
         />
       </div>
       
