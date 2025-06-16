@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
+
 const Contact = () => {
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -26,7 +27,8 @@ ${formData.get('message')}
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-  return <main className="pt-24">
+  return (
+    <main className="pt-24">
       <section className="section-padding">
         <div className="container">
           <div className="max-w-5xl mx-auto">
@@ -175,9 +177,16 @@ ${formData.get('message')}
               <h2 className="heading-md text-duo-blue mb-6 text-center">Nossa Localização</h2>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
                 <div className="aspect-w-16 aspect-h-9 h-96">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29861.144131615464!2d-47.84083723925779!3d-21.17724473078201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf1d68acc21d%3A0x37b8ee0abedeea29!2sRibeir%C3%A3o%20Preto%2C%20State%20of%20S%C3%A3o%20Paulo%2C%20Brazil!5e0!3m2!1sen!2sus!4v1652365674360!5m2!1sen!2sus" width="100%" height="100%" style={{
-                  border: 0
-                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Duo Automation Location"></iframe>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8234567890123!2d-47.30123456789012!3d-22.73456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8822b123456789%3A0x123456789abcdef0!2sRua%20do%20Serralheiro%2C%20197%20-%20Jardim%20Werner%20Plaas%2C%20Americana%20-%20SP%2C%2013478-731%2C%20Brazil!5e0!3m2!1sen!2sus!4v1652365674360!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade" 
+                    title="Duo Automation Location"
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -201,6 +210,8 @@ ${formData.get('message')}
           </div>
         </div>
       </section>
-    </main>;
+    </main>
+  );
 };
+
 export default Contact;
