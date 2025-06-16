@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 import { useContactForm } from '@/hooks/useContactForm';
+
 const Contact = () => {
   const {
     submitContactForm,
@@ -42,7 +43,7 @@ const Contact = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-12" id="formulario">
               <div className="lg:col-span-3 bg-white p-8 rounded-lg shadow-lg border border-gray-100">
                 <h2 className="heading-md text-duo-blue mb-6">Envie uma mensagem</h2>
                 
