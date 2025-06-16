@@ -11,9 +11,13 @@ const clients = [
   { name: 'São Manoel', id: 'sao-manoel', logo: '/lovable-uploads/a6959ead-a72b-4ee0-9784-a99360b6fd35.png' },
   { name: 'Cofco', id: 'cofco', logo: '/lovable-uploads/9e94d088-6c28-4f03-89ff-c93d1908525f.png' },
   { name: 'USJ S.João', id: 'usj', logo: '/lovable-uploads/a2d5fb68-d54d-462f-847c-1320c3a0af40.png' },
-  { name: 'Tereos', id: 'tereos' },
-  { name: 'Ipiranga', id: 'ipiranga' },
-  { name: 'Adecoagro', id: 'adecoagro', logo: '/lovable-uploads/ec660258-cda9-4161-8d6e-f52de71badbb.png' }
+  { name: 'Tereos', id: 'tereos', logo: '/lovable-uploads/69c7b437-9732-416c-8906-c6f6616670bd.png' },
+  { name: 'Ipiranga', id: 'ipiranga', logo: '/lovable-uploads/6965cfba-5e60-4c9e-816f-ea02a93ed3df.png' },
+  { name: 'Adecoagro', id: 'adecoagro', logo: '/lovable-uploads/ec660258-cda9-4161-8d6e-f52de71badbb.png' },
+  { name: 'Viralcool', id: 'viralcool', logo: '/lovable-uploads/b44f8bb3-8d7d-473a-8925-7f0ff6b2ce74.png' },
+  { name: 'Gerradinho Bio', id: 'gerradinho-bio', logo: '/lovable-uploads/088d4ba6-3832-4ce1-9139-62ced8c23fa6.png' },
+  { name: 'Coa Energia', id: 'coa-energia', logo: '/lovable-uploads/869e6b10-ee4a-4ec0-8bf6-1669a112e84f.png' },
+  { name: 'Jaco', id: 'jaco', logo: '/lovable-uploads/e77c2c8c-2ff5-45a5-b20f-f99ee571a675.png' }
 ];
 
 const ClientLogos = () => {
