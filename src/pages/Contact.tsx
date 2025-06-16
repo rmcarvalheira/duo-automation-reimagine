@@ -1,9 +1,29 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+    const subject = `Contato do site - ${formData.get('interesse') || 'Geral'}`;
+    const body = `
+Nome: ${formData.get('name')}
+Email: ${formData.get('email')}
+Telefone: ${formData.get('phone')}
+Empresa: ${formData.get('company')}
+Segmento: ${formData.get('segmento')}
+Interesse: ${formData.get('interesse')}
+
+Mensagem:
+${formData.get('message')}
+    `.trim();
+    
+    const mailtoLink = `mailto:contato@duo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <main className="pt-24">
       <section className="section-padding">
@@ -20,7 +40,7 @@ const Contact = () => {
               <div className="lg:col-span-3 bg-white p-8 rounded-lg shadow-lg border border-gray-100">
                 <h2 className="heading-md text-duo-blue mb-6">Envie uma mensagem</h2>
                 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleFormSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -29,6 +49,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="name"
+                        name="name"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                         required
                       />
@@ -41,6 +62,7 @@ const Contact = () => {
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                         required
                       />
@@ -55,6 +77,7 @@ const Contact = () => {
                       <input
                         type="tel"
                         id="phone"
+                        name="phone"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                       />
                     </div>
@@ -66,6 +89,7 @@ const Contact = () => {
                       <input
                         type="text"
                         id="company"
+                        name="company"
                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                       />
                     </div>
@@ -77,6 +101,7 @@ const Contact = () => {
                     </label>
                     <select
                       id="segmento"
+                      name="segmento"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                     >
                       <option value="">Selecione</option>
@@ -93,6 +118,7 @@ const Contact = () => {
                     </label>
                     <select
                       id="interesse"
+                      name="interesse"
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                     >
                       <option value="">Selecione</option>
@@ -111,6 +137,7 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={5}
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                       placeholder="Escreva sua mensagem aqui"
@@ -119,7 +146,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <Button className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg">
+                    <Button type="submit" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg">
                       Enviar mensagem
                     </Button>
                   </div>

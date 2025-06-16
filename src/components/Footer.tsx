@@ -3,6 +3,24 @@ import { Link } from 'react-router-dom';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const handleFooterFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    
+    const subject = `Contato do site - ${formData.get('segmento') || 'Geral'}`;
+    const body = `
+Nome: ${formData.get('nome')}
+Email: ${formData.get('email')}
+Segmento: ${formData.get('segmento')}
+
+Mensagem:
+${formData.get('mensagem')}
+    `.trim();
+    
+    const mailtoLink = `mailto:contato@duo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <footer className="bg-duo-blue text-white pt-12 pb-6">
       <div className="container">
@@ -105,19 +123,24 @@ const Footer = () => {
         {/* Contact Form */}
         <div className="mt-12 p-6 bg-white/10 rounded-lg backdrop-blur">
           <h3 className="text-xl font-bold mb-4 text-duo-yellow">Fale Conosco</h3>
-          <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleFooterFormSubmit}>
             <input 
               type="text" 
+              name="nome"
               placeholder="Nome" 
               className="px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-duo-yellow"
+              required
             />
             <input 
               type="email" 
+              name="email"
               placeholder="E-mail" 
               className="px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-duo-yellow"
+              required
             />
             <div className="md:col-span-2">
               <select 
+                name="segmento"
                 className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-duo-yellow"
               >
                 <option value="" disabled selected>Segmento</option>
@@ -129,9 +152,11 @@ const Footer = () => {
             </div>
             <div className="md:col-span-2">
               <textarea 
+                name="mensagem"
                 placeholder="Mensagem" 
                 rows={4}
                 className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-duo-yellow"
+                required
               ></textarea>
             </div>
             <div className="md:col-span-2">

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
@@ -89,8 +90,8 @@ const Navbar = () => {
         </div>
         
         <div className="hidden lg:block">
-          <Button className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
-            Fale com nosso time
+          <Button asChild className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
+            <Link to="/contato">Fale com nosso time</Link>
           </Button>
         </div>
         
@@ -150,8 +151,8 @@ const Navbar = () => {
           <Link to="/contato" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
             Contato
           </Link>
-          <Button className="w-full mt-4 bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
-            Fale com nosso time
+          <Button asChild className="w-full mt-4 bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
+            <Link to="/contato" onClick={toggleMenu}>Fale com nosso time</Link>
           </Button>
         </div>
       </div>
