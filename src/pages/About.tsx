@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const About = () => {
@@ -87,7 +86,7 @@ const About = () => {
             
             <div className="bg-white rounded-lg shadow-md p-6">
               <img 
-                src="/lovable-uploads/27f69a0f-f0d6-4bba-b727-b10f1f1a7ba8.png" 
+                src="/lovable-uploads/e8551acc-ea89-455b-abee-2d8fff4f1841.png" 
                 alt="Mapa dos polos de atendimento" 
                 className="w-full h-auto rounded-lg mb-6"
               />
