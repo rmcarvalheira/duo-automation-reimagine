@@ -61,7 +61,7 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const emailResponse = await resend.emails.send({
-      from: "Site Duo Automation <onboarding@resend.dev>",
+      from: "Site Duo Automation <noreply@duo.com.br>",
       to: ["contato@duo.com.br"],
       subject: subject,
       html: htmlContent,
