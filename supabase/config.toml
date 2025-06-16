@@ -1,1 +1,49 @@
+
 project_id = "uaapedxgvyucrhppeeiv"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[auth]
+enabled = true
+port = 9999
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://localhost:3000"]
+# Removed deprecated jwt_expiry, jwt_default_group_name, and jwt_admin_group_name
+# These are handled automatically by GoTrue now
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = false
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[inbucket]
+enabled = true
+port = 54324
+smtp_port = 54325
+pop3_port = 54326
+
+[storage]
+enabled = true
+port = 54325
+file_size_limit = "50MiB"
+
+[edge_functions]
+enabled = true
+
+[analytics]
+enabled = false
+
+[functions.send-contact-email]
+verify_jwt = false
