@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -37,7 +38,7 @@ const productData = {
     tagline: 'Robô para limpeza de evaporadores',
     description: 'O Robô EVA garante a limpeza completa de todos os furos de evaporadores de forma 100% automática em menos de 12 horas, eliminando a necessidade de presença humana em ambientes insalubres.',
     detailedDescription: 'O Robô EVA representa uma revolução na manutenção de evaporadores, um dos processos mais desafiadores e perigosos da indústria sucroalcooleira. Com sistema de identificação de furos obstruídos e limpeza automatizada, o EVA elimina completamente a necessidade de intervenção humana dentro das caixas de evaporação, ambiente extremamente insalubre. Além dos ganhos em segurança ocupacional, o sistema proporciona economia significativa em comparação com os métodos tradicionais de limpeza manual.',
-    image: '/lovable-uploads/f740303f-56e4-4f3b-8408-a73106f9904b.png',
+    image: '/lovable-uploads/79924496-c228-4b3e-9a6e-3cd2d97ee48a.png',
     features: ['Limpa todos os furos de forma 100% automático', 'Garante a limpeza completa de todos os furos em menos de 12 horas', 'Identifica furos obstruídos', 'Sem necessidade de seres humanos dentro das caixas de evaporação', 'Custo anual inferior à limpeza manual', 'Processo seguro sem exposição a risco de acidentes'],
     specifications: [{
       name: 'Sistema de movimento',

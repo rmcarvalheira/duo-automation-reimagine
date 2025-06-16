@@ -14,7 +14,7 @@ const products = [
   {
     name: 'Robô EVA',
     description: 'Robô para limpeza de evaporadores que garante a limpeza completa de todos os furos em menos de 12 horas.',
-    image: '/lovable-uploads/f740303f-56e4-4f3b-8408-a73106f9904b.png',
+    image: '/lovable-uploads/79924496-c228-4b3e-9a6e-3cd2d97ee48a.png',
     slug: 'robo-eva',
   },
   {
