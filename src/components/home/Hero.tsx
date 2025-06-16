@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import VideoBackground from '../VideoBackground';
@@ -9,8 +10,8 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-duo-blue/70 z-10"></div>
         <VideoBackground 
-          src="/lovable-uploads/hero-video.mp4"
-          fallbackSrc="/lovable-uploads/hero-video.webm"
+          src="https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//hero.mp4"
+          fallbackSrc="/lovable-uploads/hero-video.mp4"
         />
       </div>
       
