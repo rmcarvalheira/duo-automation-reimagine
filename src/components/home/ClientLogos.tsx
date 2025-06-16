@@ -17,7 +17,10 @@ const clients = [
   { name: 'Viralcool', id: 'viralcool', logo: '/lovable-uploads/b44f8bb3-8d7d-473a-8925-7f0ff6b2ce74.png' },
   { name: 'Gerradinho Bio', id: 'gerradinho-bio', logo: '/lovable-uploads/088d4ba6-3832-4ce1-9139-62ced8c23fa6.png' },
   { name: 'Coa Energia', id: 'coa-energia', logo: '/lovable-uploads/869e6b10-ee4a-4ec0-8bf6-1669a112e84f.png' },
-  { name: 'Jaco', id: 'jaco', logo: '/lovable-uploads/e77c2c8c-2ff5-45a5-b20f-f99ee571a675.png' }
+  { name: 'Jaco', id: 'jaco', logo: '/lovable-uploads/e77c2c8c-2ff5-45a5-b20f-f99ee571a675.png' },
+  { name: 'Uisa', id: 'uisa', logo: '/lovable-uploads/d642ae9f-6c6b-42a0-b408-c72657524ab1.png' },
+  { name: 'Zanini', id: 'zanini', logo: '/lovable-uploads/33d8c11f-6b28-4eba-8c6e-ce0b495d1820.png' },
+  { name: 'CMP', id: 'cmp', logo: '/lovable-uploads/7779bb28-cd1f-462f-9e1d-b64ebc309648.png' }
 ];
 
 const ClientLogos = () => {
