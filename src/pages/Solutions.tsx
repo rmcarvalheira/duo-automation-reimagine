@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -17,8 +16,8 @@ const Solutions = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1563203369-26f2e4a5ccf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80" 
-                  alt="Automação industrial"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
+                  alt="Engenheiros de automação trabalhando em desenvolvimento de soluções industriais"
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
               </div>
