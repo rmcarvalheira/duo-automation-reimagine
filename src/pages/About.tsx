@@ -1,4 +1,6 @@
+
 import React from 'react';
+import UpscaledImage from '../components/UpscaledImage';
 
 const About = () => {
   return (
@@ -85,9 +87,9 @@ const About = () => {
             <h2 className="heading-md text-duo-blue mb-8 text-center">Polos de Atendimento</h2>
             
             <div className="bg-white rounded-lg shadow-md p-6">
-              <img 
-                src="/lovable-uploads/e8551acc-ea89-455b-abee-2d8fff4f1841.png" 
-                alt="Mapa dos polos de atendimento" 
+              <UpscaledImage
+                src="/lovable-uploads/e8551acc-ea89-455b-abee-2d8fff4f1841.png"
+                alt="Mapa dos polos de atendimento"
                 className="w-full h-auto rounded-lg mb-6"
               />
               
