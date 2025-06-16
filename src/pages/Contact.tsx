@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 import { useContactForm } from '@/hooks/useContactForm';
-
 const Contact = () => {
-  const { submitContactForm, isLoading } = useContactForm();
-
+  const {
+    submitContactForm,
+    isLoading
+  } = useContactForm();
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    
     const contactData = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
@@ -18,26 +17,21 @@ const Contact = () => {
       company: formData.get('company') as string || undefined,
       segmento: formData.get('segmento') as string || undefined,
       interesse: formData.get('interesse') as string || undefined,
-      message: formData.get('message') as string,
+      message: formData.get('message') as string
     };
-
     const result = await submitContactForm(contactData, 'contact');
-    
     if (result.success) {
       // Reset form
       (e.target as HTMLFormElement).reset();
     }
   };
-
   const handleWhatsAppClick = () => {
     const phoneNumber = "5519981829096";
     const message = "Olá! Gostaria de saber mais sobre as soluções da Duo Automation.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  return (
-    <main className="pt-24">
+  return <main className="pt-24">
       <section className="section-padding">
         <div className="container">
           <div className="max-w-5xl mx-auto">
@@ -121,11 +115,7 @@ const Contact = () => {
                   </div>
                   
                   <div>
-                    <Button 
-                      type="submit" 
-                      disabled={isLoading}
-                      className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg"
-                    >
+                    <Button type="submit" disabled={isLoading} className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg">
                       {isLoading ? 'Enviando...' : 'Enviar mensagem'}
                     </Button>
                   </div>
@@ -154,9 +144,7 @@ const Contact = () => {
                       <Mail className="h-5 w-5 mr-3 mt-1 text-duo-yellow" />
                       <div>
                         <p className="font-medium">E-mail:</p>
-                        <a href="mailto:contato@duo.com.br" className="text-gray-700 hover:text-duo-blue transition-colors">
-                          contato@duo.com.br
-                        </a>
+                        <a href="mailto:contato@duo.com.br" className="text-gray-700 hover:text-duo-blue transition-colors">marcos.calebe@duo.com.br</a>
                       </div>
                     </div>
                     
@@ -190,16 +178,9 @@ const Contact = () => {
               <h2 className="heading-md text-duo-blue mb-6 text-center">Nossa Localização</h2>
               <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
                 <div className="aspect-w-16 aspect-h-9 h-96">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8234567890123!2d-47.30123456789012!3d-22.73456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8822b123456789%3A0x123456789abcdef0!2sRua%20do%20Serralheiro%2C%20197%20-%20Jardim%20Werner%20Plaas%2C%20Americana%20-%20SP%2C%2013478-731%2C%20Brazil!5e0!3m2!1sen!2sus!4v1652365674360!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade" 
-                    title="Duo Automation Location"
-                  ></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.8234567890123!2d-47.30123456789012!3d-22.73456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8822b123456789%3A0x123456789abcdef0!2sRua%20do%20Serralheiro%2C%20197%20-%20Jardim%20Werner%20Plaas%2C%20Americana%20-%20SP%2C%2013478-731%2C%20Brazil!5e0!3m2!1sen!2sus!4v1652365674360!5m2!1sen!2sus" width="100%" height="100%" style={{
+                  border: 0
+                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Duo Automation Location"></iframe>
                 </div>
               </div>
             </div>
@@ -223,8 +204,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>;
 };
-
 export default Contact;
