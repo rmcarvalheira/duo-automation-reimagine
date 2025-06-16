@@ -8,16 +8,14 @@ const Hero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-duo-blue/70 z-10"></div>
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+        <iframe 
+          src="https://www.youtube.com/embed/w2hNqVOlen8?autoplay=1&mute=1&loop=1&playlist=w2hNqVOlen8&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
           className="w-full h-full object-cover"
-        >
-          <source src="https://player.vimeo.com/external/410544653.sd.mp4?s=b8bd6953e73cc396d735f6aded249d391183dcea&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          style={{ minHeight: '100vh' }}
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
       </div>
       
       {/* Content */}
