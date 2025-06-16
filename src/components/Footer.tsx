@@ -1,23 +1,33 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
+import { useContactForm } from '@/hooks/useContactForm';
+
 const Footer = () => {
-  const handleFooterFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const { submitContactForm, isLoading } = useContactForm();
+
+  const handleFooterFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const subject = `Contato do site - ${formData.get('segmento') || 'Geral'}`;
-    const body = `
-Nome: ${formData.get('nome')}
-Email: ${formData.get('email')}
-Segmento: ${formData.get('segmento')}
+    
+    const contactData = {
+      name: formData.get('nome') as string,
+      email: formData.get('email') as string,
+      segmento: formData.get('segmento') as string || undefined,
+      message: formData.get('mensagem') as string,
+    };
 
-Mensagem:
-${formData.get('mensagem')}
-    `.trim();
-    const mailtoLink = `mailto:contato@duo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    const result = await submitContactForm(contactData, 'footer');
+    
+    if (result.success) {
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    }
   };
-  return <footer className="bg-duo-blue text-white pt-12 pb-6">
+
+  return (
+    <footer className="bg-duo-blue text-white pt-12 pb-6">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo & About */}
@@ -128,8 +138,12 @@ ${formData.get('mensagem')}
               <textarea name="mensagem" placeholder="Mensagem" rows={4} className="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-md text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-duo-yellow" required></textarea>
             </div>
             <div className="md:col-span-2">
-              <button type="submit" className="w-full md:w-auto px-8 py-3 bg-white text-duo-blue font-bold rounded-md hover:bg-white/90 transition-colors">
-                Enviar Mensagem
+              <button 
+                type="submit" 
+                disabled={isLoading}
+                className="w-full md:w-auto px-8 py-3 bg-white text-duo-blue font-bold rounded-md hover:bg-white/90 transition-colors disabled:opacity-50"
+              >
+                {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
               </button>
             </div>
           </form>
@@ -140,6 +154,8 @@ ${formData.get('mensagem')}
           <p>© {new Date().getFullYear()} Duo Automation. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

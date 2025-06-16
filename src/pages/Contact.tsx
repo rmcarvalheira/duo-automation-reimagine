@@ -1,32 +1,41 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
+import { useContactForm } from '@/hooks/useContactForm';
 
 const Contact = () => {
-  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const { submitContactForm, isLoading } = useContactForm();
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const subject = `Contato do site - ${formData.get('interesse') || 'Geral'}`;
-    const body = `
-Nome: ${formData.get('name')}
-Email: ${formData.get('email')}
-Telefone: ${formData.get('phone')}
-Empresa: ${formData.get('company')}
-Segmento: ${formData.get('segmento')}
-Interesse: ${formData.get('interesse')}
+    
+    const contactData = {
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string || undefined,
+      company: formData.get('company') as string || undefined,
+      segmento: formData.get('segmento') as string || undefined,
+      interesse: formData.get('interesse') as string || undefined,
+      message: formData.get('message') as string,
+    };
 
-Mensagem:
-${formData.get('message')}
-    `.trim();
-    const mailtoLink = `mailto:contato@duo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    const result = await submitContactForm(contactData, 'contact');
+    
+    if (result.success) {
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    }
   };
+
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5519981829096"; // Formato internacional sem símbolos
+    const phoneNumber = "5519981829096";
     const message = "Olá! Gostaria de saber mais sobre as soluções da Duo Automation.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+
   return (
     <main className="pt-24">
       <section className="section-padding">
@@ -112,8 +121,12 @@ ${formData.get('message')}
                   </div>
                   
                   <div>
-                    <Button type="submit" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg">
-                      Enviar mensagem
+                    <Button 
+                      type="submit" 
+                      disabled={isLoading}
+                      className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg"
+                    >
+                      {isLoading ? 'Enviando...' : 'Enviar mensagem'}
                     </Button>
                   </div>
                 </form>
