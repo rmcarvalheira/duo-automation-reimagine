@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -123,6 +124,18 @@ const ProductDetail = () => {
   // Get product data based on ID
   const product = productData[productId as keyof typeof productData];
 
+  // Handle PDF download for Robô Slim
+  const handleDownload = () => {
+    if (productId === 'robo-slim') {
+      const link = document.createElement('a');
+      link.href = 'https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//catalogo%20slim.pdf';
+      link.download = 'catalogo-robo-slim.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   // Handle invalid product ID
   if (!product) {
     return <div className="pt-24 section-padding">
@@ -157,9 +170,19 @@ const ProductDetail = () => {
                 <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
                   <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
-                <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
-                  <Download className="mr-2 h-4 w-4" /> Baixar catálogo
-                </Button>
+                {productId === 'robo-slim' ? (
+                  <Button 
+                    onClick={handleDownload}
+                    variant="outline" 
+                    className="border-white hover:bg-white text-duo-blue font-bold"
+                  >
+                    <Download className="mr-2 h-4 w-4" /> Baixar catálogo
+                  </Button>
+                ) : (
+                  <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
+                    <Download className="mr-2 h-4 w-4" /> Baixar catálogo
+                  </Button>
+                )}
               </div>
             </div>
             
@@ -205,9 +228,18 @@ const ProductDetail = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
-                    <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
-                  </Button>
+                  {productId === 'robo-slim' ? (
+                    <Button 
+                      onClick={handleDownload}
+                      className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold"
+                    >
+                      <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
+                    </Button>
+                  ) : (
+                    <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
+                      <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
+                    </Button>
+                  )}
                 </div>
               </div>
               
