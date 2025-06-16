@@ -12,7 +12,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div>
                 <img 
-                  src="/lovable-uploads/1a7f670c-d496-4d9d-a4d0-472b126aee68.png" 
+                  src="/lovable-uploads/12b14934-fe26-4359-a5e7-5e372359ccae.png" 
                   alt="Sede da Duo Automation" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
