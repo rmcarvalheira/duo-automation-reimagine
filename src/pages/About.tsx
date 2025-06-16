@@ -1,4 +1,3 @@
-
 import React from 'react';
 import UpscaledImage from '../components/UpscaledImage';
 
@@ -13,7 +12,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div>
                 <img 
-                  src="/lovable-uploads/dc27a70d-f6cc-4051-a248-51bac4439300.png" 
+                  src="/lovable-uploads/1a7f670c-d496-4d9d-a4d0-472b126aee68.png" 
                   alt="Sede da Duo Automation" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
