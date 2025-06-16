@@ -16,3 +16,64 @@ export const getProductImage = (productId: string): string => {
   const images = processProductImages();
   return images[productId as keyof typeof images] || '';
 };
+
+// Image processing function for upscaling
+export const processImage = async (
+  blob: Blob, 
+  options: {
+    quality?: number;
+    maxWidth?: number;
+    maxHeight?: number;
+    format?: string;
+  }
+): Promise<Blob> => {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    if (!ctx) {
+      reject(new Error('Could not get canvas context'));
+      return;
+    }
+    
+    img.onload = () => {
+      // Calculate new dimensions
+      const { maxWidth = 2048, maxHeight = 2048 } = options;
+      let { width, height } = img;
+      
+      // Scale up the image (upscaling)
+      const scale = Math.min(maxWidth / width, maxHeight / height);
+      if (scale > 1) {
+        width *= scale;
+        height *= scale;
+      }
+      
+      canvas.width = width;
+      canvas.height = height;
+      
+      // Use image smoothing for better quality
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+      
+      // Draw the image
+      ctx.drawImage(img, 0, 0, width, height);
+      
+      // Convert to blob
+      canvas.toBlob(
+        (processedBlob) => {
+          if (processedBlob) {
+            resolve(processedBlob);
+          } else {
+            reject(new Error('Failed to process image'));
+          }
+        },
+        options.format === 'png' ? 'image/png' : 'image/jpeg',
+        options.quality || 0.95
+      );
+    };
+    
+    img.onerror = () => reject(new Error('Failed to load image'));
+    img.src = URL.createObjectURL(blob);
+  });
+};

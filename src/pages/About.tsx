@@ -88,7 +88,7 @@ const About = () => {
             
             <div className="bg-white rounded-lg shadow-md p-6">
               <UpscaledImage
-                src="/lovable-uploads/e8551acc-ea89-455b-abee-2d8fff4f1841.png"
+                src="/lovable-uploads/88efcfb8-a005-4d94-984f-9ed366a53ef9.png"
                 alt="Mapa dos polos de atendimento"
                 className="w-full h-auto rounded-lg mb-6"
               />
