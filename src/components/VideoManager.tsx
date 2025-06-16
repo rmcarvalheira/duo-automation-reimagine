@@ -30,7 +30,8 @@ const VideoManager: React.FC = () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) return;
 
-      const { data, error } = await supabase
+      // Use rpc or direct query to bypass type issues
+      const { data, error } = await (supabase as any)
         .from('videos')
         .select('*')
         .eq('user_id', user.id)
@@ -39,7 +40,7 @@ const VideoManager: React.FC = () => {
       if (error) throw error;
 
       // Get public URLs for each video
-      const videosWithUrls = data?.map(video => {
+      const videosWithUrls = data?.map((video: any) => {
         const { data: { publicUrl } } = supabase.storage
           .from('videos')
           .getPublicUrl(video.storage_path);
@@ -74,7 +75,7 @@ const VideoManager: React.FC = () => {
       if (storageError) throw storageError;
 
       // Delete from database
-      const { error: dbError } = await supabase
+      const { error: dbError } = await (supabase as any)
         .from('videos')
         .delete()
         .eq('id', video.id);
