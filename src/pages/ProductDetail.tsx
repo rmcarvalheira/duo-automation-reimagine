@@ -146,10 +146,10 @@ const ProductDetail = () => {
               <p className="body-lg text-gray-300">{product.description}</p>
               
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90">
+                <Button className="bg-white text-duo-blue hover:bg-white/90 font-bold">
                   Solicitar orçamento
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-duo-blue">
                   <Download className="mr-2 h-4 w-4" /> Baixar catálogo
                 </Button>
               </div>
@@ -205,7 +205,7 @@ const ProductDetail = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <Button className="w-full bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90">
+                  <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                     <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
                   </Button>
                 </div>
@@ -214,7 +214,7 @@ const ProductDetail = () => {
               <div className="mt-8 bg-duo-blue text-white p-6 rounded-lg">
                 <h3 className="font-bold text-lg mb-4">Precisa de mais informações?</h3>
                 <p className="text-gray-300 mb-4">Entre em contato com nossa equipe para obter mais detalhes sobre este produto.</p>
-                <Button className="w-full bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90">
+                <Button className="w-full bg-white text-duo-blue hover:bg-white/90 font-bold">
                   Fale com um especialista
                 </Button>
               </div>
