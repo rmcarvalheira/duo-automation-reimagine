@@ -70,7 +70,7 @@ const ProductOverview = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button asChild size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8">
+          <Button asChild size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 font-bold">
             <Link to="/produtos">Ver todos os produtos</Link>
           </Button>
         </div>

@@ -24,7 +24,7 @@ const CTABanner = () => {
               </p>
             </div>
             
-            <Button asChild size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg">
+            <Button asChild size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 py-6 text-lg font-bold">
               <Link to="/contato">Solicite um orçamento</Link>
             </Button>
           </div>
