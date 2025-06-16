@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -156,8 +154,8 @@ const ProductDetail = () => {
               <p className="body-lg text-gray-300">{product.description}</p>
               
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button className="text-duo-blue font-bold bg-duo-yellow">
-                  Solicitar orçamento
+                <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
+                  <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
                 <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                   <Download className="mr-2 h-4 w-4" /> Baixar catálogo
