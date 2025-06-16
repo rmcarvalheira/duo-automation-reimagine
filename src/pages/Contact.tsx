@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
@@ -167,10 +166,15 @@ ${formData.get('message')}
                   
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <PhoneCall className="h-5 w-5 mr-3 mt-1 text-duo-yellow" />
-                      <div>
-                        <p className="font-medium">Telefone:</p>
-                        <p className="text-gray-700">+55 (16) 3512-9260</p>
+                      <PhoneCall className="h-5 w-5 mr-3 mt-1 text-duo-yellow flex-shrink-0" />
+                      <div className="space-y-2">
+                        <p className="font-medium">Telefones:</p>
+                        <div className="text-gray-700 space-y-1">
+                          <p><span className="font-medium">Administrativo:</span> (19) 3455-7352</p>
+                          <p><span className="font-medium">Vendas:</span> (19) 98182-9096</p>
+                          <p><span className="font-medium">Suporte técnico:</span> (19) 99628-8687</p>
+                          <p><span className="font-medium">Suprimentos:</span> (19) 99840-7086</p>
+                        </div>
                       </div>
                     </div>
                     
