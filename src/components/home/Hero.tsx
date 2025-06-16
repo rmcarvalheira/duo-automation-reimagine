@@ -31,10 +31,10 @@ const Hero = () => {
             Aumentamos a produtividade e segurança da indústria substituindo mão de obra por robôs em trabalhos perigosos e insalubres.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8">
+            <Button size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 font-bold">
               Fale com nosso time
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-duo-blue font-bold">
+            <Button size="lg" className="bg-white text-duo-blue hover:bg-white/90 px-8 font-bold">
               Conheça nossos produtos
             </Button>
           </div>
