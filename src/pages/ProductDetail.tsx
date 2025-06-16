@@ -214,8 +214,8 @@ const ProductDetail = () => {
               <div className="mt-8 bg-duo-blue text-white p-6 rounded-lg">
                 <h3 className="font-bold text-lg mb-4">Precisa de mais informações?</h3>
                 <p className="text-gray-300 mb-4">Entre em contato com nossa equipe para obter mais detalhes sobre este produto.</p>
-                <Button className="w-full bg-white text-duo-blue hover:bg-white/90 font-bold">
-                  Fale com um especialista
+                <Button asChild className="w-full bg-white text-duo-blue hover:bg-white/90 font-bold">
+                  <Link to="/contato">Fale com um especialista</Link>
                 </Button>
               </div>
             </div>
