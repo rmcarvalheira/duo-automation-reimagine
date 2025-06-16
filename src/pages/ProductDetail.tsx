@@ -153,7 +153,7 @@ const ProductDetail = () => {
               <p className="body-lg text-gray-300">{product.description}</p>
               
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button className="bg-white text-duo-blue hover:bg-white/90 font-bold">
+                <Button className="text-duo-blue font-bold bg-duo-yellow">
                   Solicitar orçamento
                 </Button>
                 <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
