@@ -34,7 +34,7 @@ const Hero = () => {
             <Button size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8">
               Fale com nosso time
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-duo-blue font-bold">
               Conheça nossos produtos
             </Button>
           </div>
