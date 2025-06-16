@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -124,12 +125,19 @@ const ProductDetail = () => {
   // Get product data based on ID
   const product = productData[productId as keyof typeof productData];
 
-  // Handle PDF download for Robô Slim
+  // Handle PDF download for Robô Slim and Duo Connect
   const handleDownload = () => {
     if (productId === 'robo-slim') {
       const link = document.createElement('a');
       link.href = 'https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//catalogo%20slim.pdf';
       link.download = 'catalogo-robo-slim.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (productId === 'duo-connect') {
+      const link = document.createElement('a');
+      link.href = 'https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//catalogo%20connect.pdf';
+      link.download = 'catalogo-duo-connect.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -170,7 +178,7 @@ const ProductDetail = () => {
                 <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
                   <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
-                {productId === 'robo-slim' ? (
+                {(productId === 'robo-slim' || productId === 'duo-connect') ? (
                   <Button 
                     onClick={handleDownload}
                     variant="outline" 
@@ -228,7 +236,7 @@ const ProductDetail = () => {
                 </div>
                 
                 <div className="mt-8">
-                  {productId === 'robo-slim' ? (
+                  {(productId === 'robo-slim' || productId === 'duo-connect') ? (
                     <Button 
                       onClick={handleDownload}
                       className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold"
@@ -257,3 +265,4 @@ const ProductDetail = () => {
     </main>;
 };
 export default ProductDetail;
+
