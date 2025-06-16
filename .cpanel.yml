@@ -1,0 +1,6 @@
+
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home5/duoauto/repositories/duo-automation-reimagine/
+    - /bin/cp -R build/* $DEPLOYPATH
