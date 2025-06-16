@@ -1,5 +1,7 @@
 
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import VideoBackground from '../VideoBackground';
 
@@ -26,25 +28,26 @@ const Hero = () => {
             Aumentamos a produtividade e segurança da indústria substituindo mão de obra por robôs em trabalhos perigosos e insalubres.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 font-bold">
-              Fale com nosso time
+            <Button asChild size="lg" className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 px-8 font-bold">
+              <Link to="/contato">Fale com nosso time</Link>
             </Button>
-            <Button size="lg" className="bg-white text-duo-blue hover:bg-white/90 px-8 font-bold">
-              Conheça nossos produtos
+            <Button asChild size="lg" className="bg-white text-duo-blue hover:bg-white/90 px-8 font-bold">
+              <Link to="/produtos">Conheça nossos produtos</Link>
             </Button>
-          </div>
-          
-          {/* Scroll Indicator */}
-          <div className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-8 h-12 border-2 border-white rounded-full flex items-center justify-center">
-              <div className="w-1 h-3 bg-white rounded-full animate-[bounce_1.5s_infinite]"></div>
-            </div>
-            <p className="text-white text-sm mt-2 text-center">Role para baixo</p>
           </div>
         </div>
+      </div>
+      
+      {/* Scroll Indicator - moved to bottom right */}
+      <div className="hidden md:block absolute bottom-10 right-10 animate-bounce">
+        <div className="w-8 h-12 border-2 border-white rounded-full flex items-center justify-center">
+          <div className="w-1 h-3 bg-white rounded-full animate-[bounce_1.5s_infinite]"></div>
+        </div>
+        <p className="text-white text-sm mt-2 text-center">Role para baixo</p>
       </div>
     </section>
   );
 };
 
 export default Hero;
+
