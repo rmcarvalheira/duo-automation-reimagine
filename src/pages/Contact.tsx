@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
@@ -22,6 +23,13 @@ ${formData.get('message')}
     
     const mailtoLink = `mailto:contato@duo.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
+  };
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5519981829096"; // Formato internacional sem símbolos
+    const message = "Olá! Gostaria de saber mais sobre as soluções da Duo Automation.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
@@ -193,7 +201,10 @@ ${formData.get('message')}
                   <p className="mb-4 text-gray-300">
                     Precisa de uma resposta rápida? Entre em contato pelo WhatsApp e fale diretamente com nossa equipe.
                   </p>
-                  <Button className="w-full bg-green-500 hover:bg-green-600 flex items-center justify-center">
+                  <Button 
+                    onClick={handleWhatsAppClick}
+                    className="w-full bg-green-500 hover:bg-green-600 flex items-center justify-center"
+                  >
                     <svg viewBox="0 0 32 32" className="h-5 w-5 mr-2" fill="white">
                       <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-.91-.73-1.284-.4-.188-1.065-2.873-1.38-3.132-.312-.258-.73-.188-1.546-.188-.8 0-1.784.22-2.463.644-.536.33-1.635 1.593-1.635 3.88 0 2.287 1.747 4.5 1.99 4.785 1.146 1.442 2.765 2.615 4.754 3.407.647.258 2.45 1.032 3.25 1.032.63 0 2.6-1.032 2.6-1.89 0-.473-.107-.394-.287-.587-.537-.143-2.764-.816-3.063-.946-.3-.076-.534-.253-.6-.516a.932.932 0 0 1 .3-.73c.152-.152 1.253-.994 1.35-1.093.106-.258.13-.645-.215-.946a.777.777 0 0 0-.188-.15l-.36-.017z"/>
                       <path d="M16.063 0C7.14 0 0 7.076 0 16c0 2.695.65 5.255 1.926 7.5L.258 31.246c-.14.455.194.857.645.857.112 0 .232-.025.336-.08l7.79-3.46c2.21 1.2 4.72 1.8 7.25 1.8 8.924 0 16.063-7.076 16.063-16S24.988 0 16.063 0zm0 30c-2.374 0-4.768-.587-6.874-1.7a.616.616 0 0 0-.546-.047l-6.42 2.85 2.86-6.283a.623.623 0 0 0-.054-.554C3.614 22.207 2.938 19.288 2.938 16 2.938 8.7 8.763 2.938 16.063 2.938 23.364 2.938 30 8.7 30 16s-5.637 14-13.937 14z" fill-rule="evenodd"/>
