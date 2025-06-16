@@ -8,7 +8,7 @@ const products = [
   {
     name: 'Robô Slim',
     description: 'Robô para chapisco com eletrodo, totalmente autônomo e com economia média de 50% de consumível.',
-    image: '/lovable-uploads/5d74b1e9-2a75-4c71-810d-5ea4c9954ea8.png',
+    image: '/lovable-uploads/37d70281-7c79-4b39-a5c7-3ff018f6c0c1.png',
     slug: 'robo-slim',
   },
   {

@@ -10,7 +10,7 @@ const productData = {
     tagline: 'Robô para chapisco com eletrodo',
     description: 'O Robô Slim é uma solução totalmente autônoma para chapisco com eletrodo, proporcionando economia média de 50% de consumível e maior segurança nas operações de manutenção de moendas.',
     detailedDescription: 'O Robô Slim foi desenvolvido para automatizar o processo de chapisco com eletrodo em moendas de qualquer tamanho, eliminando a necessidade de intervenção manual em um ambiente de alto risco. Seu design compacto e leve permite fácil transporte e instalação, enquanto sua tecnologia avançada garante um acabamento preciso e consistente, prolongando a vida útil dos equipamentos e reduzindo o tempo de parada para manutenção.',
-    image: '/lovable-uploads/5d74b1e9-2a75-4c71-810d-5ea4c9954ea8.png',
+    image: '/lovable-uploads/37d70281-7c79-4b39-a5c7-3ff018f6c0c1.png',
     features: ['Totalmente autônomo', 'Média de 50% de economia de consumível', 'Qualquer tamanho de moenda', 'Rolos superiores e inferiores', 'Qualquer marca de eletrodo', 'Leve – transportado com as mãos'],
     specifications: [{
       name: 'Dimensões',

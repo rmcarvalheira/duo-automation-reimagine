@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,7 @@ const products = [
     name: 'Robô Slim',
     tagline: 'Robô para chapisco com eletrodo',
     description: 'Solução totalmente autônoma para chapisco com eletrodo, proporcionando economia média de 50% de consumível e maior segurança nas operações.',
-    image: '/lovable-uploads/5d74b1e9-2a75-4c71-810d-5ea4c9954ea8.png',
+    image: '/lovable-uploads/37d70281-7c79-4b39-a5c7-3ff018f6c0c1.png',
     features: [
       'Totalmente autônomo',
       'Média de 50% de economia de consumível',
