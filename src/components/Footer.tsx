@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
@@ -13,7 +12,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/52fd567d-8a0c-47bd-a3dc-60e1af2d60da.png" 
               alt="Duo Automation Logo" 
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4"
             />
             <p className="mt-4 text-sm text-gray-300">
               Soluções de automação industrial para aumentar a produtividade e segurança da agroindústria, substituindo mão de obra por robôs em trabalhos perigosos e insalubres.
