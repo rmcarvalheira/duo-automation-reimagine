@@ -137,7 +137,7 @@ const Footer = () => {
             <div className="md:col-span-2">
               <button 
                 type="submit" 
-                className="w-full md:w-auto px-8 py-3 bg-duo-yellow text-duo-blue font-bold rounded-md hover:bg-duo-yellow/90 transition-colors"
+                className="w-full md:w-auto px-8 py-3 bg-white text-duo-blue font-bold rounded-md hover:bg-white/90 transition-colors"
               >
                 Enviar Mensagem
               </button>

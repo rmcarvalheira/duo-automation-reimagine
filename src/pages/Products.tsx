@@ -114,7 +114,7 @@ const Products = () => {
                     </ul>
                   </div>
                   
-                  <Button asChild className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
+                  <Button asChild className="bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                     <Link to={`/produtos/${product.id}`}>
                       Ver detalhes <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
