@@ -1,5 +1,19 @@
-
 import React from 'react';
+
+const clients = [
+  { name: 'Raízen', id: 'raizen', logo: '/lovable-uploads/25f5606a-1a31-409e-adf6-b7ef7897c59e.png' },
+  { name: 'São Martinho', id: 'sao-martinho', logo: '/lovable-uploads/2255b841-674b-4743-b320-b885486b2e65.png' },
+  { name: 'Cocal', id: 'cocal', logo: '/lovable-uploads/13b1d487-349d-4d6f-80a1-27db24b377f1.png' },
+  { name: 'Delta', id: 'delta', logo: '/lovable-uploads/77ebf72f-7706-4adf-b3b1-d0e89e349bfe.png' },
+  { name: 'Santa Cruz', id: 'santa-cruz', logo: '/lovable-uploads/fc3ec48a-fa40-4ccd-986f-97af34abfa1a.png' },
+  { name: 'Usina Lins', id: 'usina-lins', logo: '/lovable-uploads/88898cab-67ce-4942-8892-b141b3d03224.png' },
+  { name: 'São Manoel', id: 'sao-manoel', logo: '/lovable-uploads/a6959ead-a72b-4ee0-9784-a99360b6fd35.png' },
+  { name: 'Cofco', id: 'cofco', logo: '/lovable-uploads/9e94d088-6c28-4f03-89ff-c93d1908525f.png' },
+  { name: 'USJ S.João', id: 'usj', logo: '/lovable-uploads/a2d5fb68-d54d-462f-847c-1320c3a0af40.png' },
+  { name: 'Tereos', id: 'tereos' },
+  { name: 'Ipiranga', id: 'ipiranga' },
+  { name: 'Adecoagro', id: 'adecoagro', logo: '/lovable-uploads/ec660258-cda9-4161-8d6e-f52de71badbb.png' }
+];
 
 const Clients = () => {
   return (
@@ -15,42 +29,19 @@ const Clients = () => {
           
           <div className="mb-16">
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Raízen</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">São Martinho</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Cocal</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Delta</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Tereos</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Santa Cruz</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Usina Lins</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">São Manoel</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Cofco</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">USJ S.João</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Ipiranga</span>
-              </div>
-              <div className="p-4 flex items-center justify-center">
-                <span className="text-lg font-medium text-gray-700">Adecoagro</span>
-              </div>
+              {clients.map((client) => (
+                <div key={client.id} className="p-4 flex items-center justify-center h-20">
+                  {client.logo ? (
+                    <img 
+                      src={client.logo} 
+                      alt={`Logo ${client.name}`}
+                      className="max-h-16 max-w-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-lg font-medium text-gray-700 text-center">{client.name}</span>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
           
