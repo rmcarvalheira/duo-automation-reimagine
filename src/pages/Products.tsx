@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -39,7 +40,7 @@ const products = [
     name: 'Duo Connect',
     tagline: 'Monitoramento online da moenda',
     description: 'Sistema completo para monitoramento online em tempo real dos parâmetros da moenda, acessível por PC, celular ou tablet, permitindo a visualização simultânea de várias moendas.',
-    image: '/lovable-uploads/bd0964d7-fc0f-45ee-ad3c-dd301a2ade8e.png',
+    image: '/lovable-uploads/f587cc4f-5b62-462f-9ebb-bfb99a0b8ee6.png',
     features: [
       'Oscilação dos dois lados dos rolos',
       'RPM dos rolos',

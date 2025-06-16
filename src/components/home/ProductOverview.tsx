@@ -20,7 +20,7 @@ const products = [
   {
     name: 'Duo Connect',
     description: 'Sistema de monitoramento online da moenda em tempo real, acessível por PC, celular ou tablet.',
-    image: '/lovable-uploads/bd0964d7-fc0f-45ee-ad3c-dd301a2ade8e.png',
+    image: '/lovable-uploads/f587cc4f-5b62-462f-9ebb-bfb99a0b8ee6.png',
     slug: 'duo-connect',
   },
   {

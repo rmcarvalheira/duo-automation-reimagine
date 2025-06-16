@@ -64,7 +64,7 @@ const productData = {
     tagline: 'Monitoramento online da moenda',
     description: 'Sistema completo para monitoramento online em tempo real dos parâmetros da moenda, acessível por PC, celular ou tablet, permitindo a visualização simultânea de várias moendas.',
     detailedDescription: 'O Duo Connect é uma plataforma avançada de IoT industrial desenvolvida especificamente para o monitoramento integral de moendas. O sistema coleta e processa dados em tempo real, permitindo o acompanhamento simultâneo de múltiplos parâmetros críticos como oscilação dos rolos, temperatura, pressão e muito mais. Com interface intuitiva e acessível em diversos dispositivos, o Duo Connect transforma dados em insights acionáveis, permitindo a tomada de decisões baseada em dados concretos para otimização do processo industrial.',
-    image: '/lovable-uploads/bd0964d7-fc0f-45ee-ad3c-dd301a2ade8e.png',
+    image: '/lovable-uploads/f587cc4f-5b62-462f-9ebb-bfb99a0b8ee6.png',
     features: ['Oscilação dos dois lados dos rolos', 'RPM dos rolos', 'Temperatura do óleo', 'Pressão de esmagamento', 'Nível do donnely', 'Monitoramento online em tempo real por PC, celular ou tablet', 'Visualização de várias moendas em simultâneo', 'Modo consultor para várias usinas'],
     specifications: [{
       name: 'Sensores',
@@ -114,6 +114,7 @@ const productData = {
     }]
   }
 };
+
 const ProductDetail = () => {
   const {
     productId
