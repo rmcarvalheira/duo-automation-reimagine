@@ -76,7 +76,7 @@ const About = () => {
             <h2 className="heading-md text-duo-blue mb-8 text-center">Polos de Atendimento</h2>
             
             <div className="bg-white rounded-lg shadow-md p-6">
-              <UpscaledImage src="/lovable-uploads/88efcfb8-a005-4d94-984f-9ed366a53ef9.png" alt="Mapa dos polos de atendimento" className="w-full h-auto rounded-lg mb-6" />
+              <img src="/lovable-uploads/88efcfb8-a005-4d94-984f-9ed366a53ef9.png" alt="Mapa dos polos de atendimento" className="w-full h-auto rounded-lg mb-6" />
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2">
