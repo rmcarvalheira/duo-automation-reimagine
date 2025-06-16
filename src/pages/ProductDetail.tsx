@@ -156,7 +156,7 @@ const ProductDetail = () => {
                 <Button className="bg-white text-duo-blue hover:bg-white/90 font-bold">
                   Solicitar orçamento
                 </Button>
-                <Button variant="outline" className="border-white hover:bg-white text-duo-blue">
+                <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                   <Download className="mr-2 h-4 w-4" /> Baixar catálogo
                 </Button>
               </div>
