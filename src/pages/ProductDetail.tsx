@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -92,7 +93,7 @@ const productData = {
     tagline: 'Robô para envase e paletização de açúcar',
     description: 'Solução completa para envase e paletização de açúcar, com alimentador automático de sacos, sistema de verificação dupla de pesagem e relatórios de operação na nuvem.',
     detailedDescription: 'O Robô Picker é uma solução end-to-end para o processo de envase e paletização de açúcar, integrando várias etapas que tradicionalmente demandariam múltiplos equipamentos e intervenção humana constante. Com capacidade para processar até 720 sacos por hora, o sistema inclui alimentação automática, verificação dupla de peso para garantia de qualidade, e sistema de rejeição para unidades fora de conformidade. Todo o processo é monitorado e registrado na nuvem, permitindo análises detalhadas de produtividade e rastreabilidade completa.',
-    image: '/lovable-uploads/d334d8f4-79fb-4870-a445-fa842054c005.png',
+    image: '/lovable-uploads/c45da574-cf7d-4bda-ae96-35e63d3e273f.png',
     features: ['Alimentador de sacos automático', 'Dobra + Selagem, alarme automático para quebra ou término do fio de algodão', 'Dupla pesagem para verificação', 'Sacos de 50kgs', '720 sacos por hora', 'Relatórios de operação na nuvem'],
     specifications: [{
       name: 'Capacidade',

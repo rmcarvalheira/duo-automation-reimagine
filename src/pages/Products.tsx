@@ -58,7 +58,7 @@ const products = [
     name: 'Robô Picker',
     tagline: 'Robô para envase e paletização de açúcar',
     description: 'Solução completa para envase e paletização de açúcar, com alimentador automático de sacos, sistema de verificação dupla de pesagem e relatórios de operação na nuvem.',
-    image: '/lovable-uploads/d334d8f4-79fb-4870-a445-fa842054c005.png',
+    image: '/lovable-uploads/c45da574-cf7d-4bda-ae96-35e63d3e273f.png',
     features: [
       'Alimentador de sacos automático',
       'Dobra + Selagem, alarme automático para quebra ou término do fio de algodão',
