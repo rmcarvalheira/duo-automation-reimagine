@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -174,7 +175,7 @@ const ProductDetail = () => {
               
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
-                  <Link to="/contato#formulario">Solicitar orçamento</Link>
+                  <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
                 {(productId === 'robo-slim' || productId === 'duo-connect') ? (
                   <Button 
@@ -253,7 +254,7 @@ const ProductDetail = () => {
                 <h3 className="font-bold text-lg mb-4">Precisa de mais informações?</h3>
                 <p className="text-gray-300 mb-4">Entre em contato com nossa equipe para obter mais detalhes sobre este produto.</p>
                 <Button asChild className="w-full bg-white text-duo-blue hover:bg-white/90 font-bold">
-                  <Link to="/contato#formulario">Fale com um especialista</Link>
+                  <Link to="/contato">Fale com um especialista</Link>
                 </Button>
               </div>
             </div>
