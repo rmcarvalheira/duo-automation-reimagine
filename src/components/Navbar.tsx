@@ -3,11 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [currentLang, setCurrentLang] = useState('pt');
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +29,20 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleLanguage = () => {
-    setCurrentLang(currentLang === 'pt' ? 'en' : 'pt');
+  const cycleLanguage = () => {
+    const languages = ['pt', 'en', 'es'] as const;
+    const currentIndex = languages.indexOf(language);
+    const nextIndex = (currentIndex + 1) % languages.length;
+    setLanguage(languages[nextIndex]);
+  };
+
+  const getLanguageDisplay = () => {
+    switch (language) {
+      case 'pt': return 'PT';
+      case 'en': return 'EN';
+      case 'es': return 'ES';
+      default: return 'PT';
+    }
   };
 
   return (
@@ -50,58 +63,59 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-8">
           <Link to="/sobre" className="text-duo-blue hover:text-duo-blue/80 font-medium">
-            Sobre a Duo
+            {t('navbar.aboutDuo')}
           </Link>
           <div className="relative group">
             <button className="flex items-center text-duo-blue hover:text-duo-blue/80 font-medium">
-              Produtos <ChevronDown className="ml-1 h-4 w-4" />
+              {t('navbar.products')} <ChevronDown className="ml-1 h-4 w-4" />
             </button>
-            <div className="absolute top-full left-0 mt-2 w-60 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+            <div className="absolute top-full left-0 mt-2 w-60 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               <Link to="/produtos/robo-slim" className="block px-4 py-2 hover:bg-gray-100">
-                Robô Slim
+                {t('navbar.roboSlim')}
               </Link>
               <Link to="/produtos/robo-eva" className="block px-4 py-2 hover:bg-gray-100">
-                Robô EVA
+                {t('navbar.roboEva')}
               </Link>
               <Link to="/produtos/duo-connect" className="block px-4 py-2 hover:bg-gray-100">
-                Duo Connect
+                {t('navbar.duoConnect')}
               </Link>
               <Link to="/produtos/robo-picker" className="block px-4 py-2 hover:bg-gray-100">
-                Robô Picker
+                {t('navbar.roboPicker')}
               </Link>
             </div>
           </div>
           <Link to="/clientes" className="text-duo-blue hover:text-duo-blue/80 font-medium">
-            Clientes & Cases
+            {t('navbar.clients')}
           </Link>
           <Link to="/solucoes" className="text-duo-blue hover:text-duo-blue/80 font-medium">
-            Soluções de Automação
+            {t('navbar.solutions')}
           </Link>
           <Link to="/contato" className="text-duo-blue hover:text-duo-blue/80 font-medium">
-            Contato
+            {t('navbar.contact')}
           </Link>
           <button 
-            onClick={toggleLanguage}
+            onClick={cycleLanguage}
             className="flex items-center text-duo-blue hover:text-duo-blue/80"
           >
             <Globe className="h-5 w-5 mr-1" />
-            <span className="text-sm font-medium">{currentLang.toUpperCase()}</span>
+            <span className="text-sm font-medium">{getLanguageDisplay()}</span>
           </button>
         </div>
         
         <div className="hidden lg:block">
           <Button asChild className="bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
-            <Link to="/contato">Fale com nosso time</Link>
+            <Link to="/contato">{t('navbar.talkToTeam')}</Link>
           </Button>
         </div>
         
         {/* Mobile Navigation Toggle */}
         <div className="lg:hidden flex items-center">
           <button
-            onClick={toggleLanguage}
-            className="mr-4 text-duo-blue"
+            onClick={cycleLanguage}
+            className="mr-4 text-duo-blue flex items-center"
           >
-            <Globe className="h-5 w-5" />
+            <Globe className="h-5 w-5 mr-1" />
+            <span className="text-sm font-medium">{getLanguageDisplay()}</span>
           </button>
           
           <button
@@ -120,39 +134,39 @@ const Navbar = () => {
       `}>
         <div className="container flex flex-col space-y-4 p-4">
           <Link to="/sobre" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
-            Sobre a Duo
+            {t('navbar.aboutDuo')}
           </Link>
           <div className="py-2 text-lg font-medium border-b">
             <div className="flex justify-between items-center mb-2">
-              <span>Produtos</span>
+              <span>{t('navbar.products')}</span>
               <ChevronDown className="h-4 w-4" />
             </div>
             <div className="ml-4 flex flex-col space-y-2 mt-2">
               <Link to="/produtos/robo-slim" className="py-1" onClick={toggleMenu}>
-                Robô Slim
+                {t('navbar.roboSlim')}
               </Link>
               <Link to="/produtos/robo-eva" className="py-1" onClick={toggleMenu}>
-                Robô EVA
+                {t('navbar.roboEva')}
               </Link>
               <Link to="/produtos/duo-connect" className="py-1" onClick={toggleMenu}>
-                Duo Connect
+                {t('navbar.duoConnect')}
               </Link>
               <Link to="/produtos/robo-picker" className="py-1" onClick={toggleMenu}>
-                Robô Picker
+                {t('navbar.roboPicker')}
               </Link>
             </div>
           </div>
           <Link to="/clientes" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
-            Clientes & Cases
+            {t('navbar.clients')}
           </Link>
           <Link to="/solucoes" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
-            Soluções de Automação
+            {t('navbar.solutions')}
           </Link>
           <Link to="/contato" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
-            Contato
+            {t('navbar.contact')}
           </Link>
           <Button asChild className="w-full mt-4 bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
-            <Link to="/contato" onClick={toggleMenu}>Fale com nosso time</Link>
+            <Link to="/contato" onClick={toggleMenu}>{t('navbar.talkToTeam')}</Link>
           </Button>
         </div>
       </div>

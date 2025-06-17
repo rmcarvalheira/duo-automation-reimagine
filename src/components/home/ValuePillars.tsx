@@ -1,32 +1,35 @@
 
 import React from 'react';
-
-const pillars = [
-  {
-    title: 'Inovação',
-    description: 'Desenvolvemos tecnologias pioneiras com foco na realidade da agroindústria brasileira.',
-    icon: '🔍',
-  },
-  {
-    title: 'Patente',
-    description: 'Produtos exclusivos desenvolvidos e patenteados pela Duo Automation.',
-    icon: '📜',
-  },
-  {
-    title: 'Resultados',
-    description: 'Soluções que garantem maior produtividade, segurança e retorno do investimento.',
-    icon: '📈',
-  },
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ValuePillars = () => {
+  const { t } = useLanguage();
+
+  const pillars = [
+    {
+      title: t('valuePillars.innovation.title'),
+      description: t('valuePillars.innovation.description'),
+      icon: '🔍',
+    },
+    {
+      title: t('valuePillars.patent.title'),
+      description: t('valuePillars.patent.description'),
+      icon: '📜',
+    },
+    {
+      title: t('valuePillars.results.title'),
+      description: t('valuePillars.results.description'),
+      icon: '📈',
+    },
+  ];
+
   return (
     <section className="section-padding bg-white">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="heading-lg text-duo-blue mb-4">Nossos Pilares de Valor</h2>
+          <h2 className="heading-lg text-duo-blue mb-4">{t('valuePillars.title')}</h2>
           <p className="body-md text-gray-600 max-w-2xl mx-auto">
-            Entregamos soluções que transformam a indústria através de três pilares fundamentais
+            {t('valuePillars.subtitle')}
           </p>
         </div>
         
