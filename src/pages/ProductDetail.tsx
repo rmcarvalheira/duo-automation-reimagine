@@ -14,7 +14,7 @@ const productData = {
     features: ['Totalmente autônomo', 'Média de 50% de economia de consumível', 'Qualquer tamanho de moenda', 'Rolos superiores e inferiores', 'Qualquer marca de eletrodo', 'Leve – transportado com as mãos'],
     specifications: [{
       name: 'Dimensões',
-      value: '120 x 40 x 35 cm'
+      value: '4.000 x 300 x 300 mm'
     }, {
       name: 'Peso',
       value: '25 kg'
