@@ -9,6 +9,22 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const { t } = useLanguage();
 
+  // Map product IDs to translation keys
+  const getProductKey = (id: string | undefined) => {
+    switch (id) {
+      case 'robo-slim':
+        return 'roboSlim';
+      case 'robo-eva':
+        return 'roboEva';
+      case 'duo-connect':
+        return 'duoConnect';
+      case 'robo-picker':
+        return 'roboPicker';
+      default:
+        return '';
+    }
+  };
+
   // Get product image based on productId
   const getProductImage = () => {
     switch (productId) {
@@ -63,14 +79,14 @@ const ProductDetail = () => {
 
   // Get product features array
   const getProductFeatures = () => {
-    if (!productId) return [];
+    const productKey = getProductKey(productId);
+    if (!productKey) return [];
     
-    const baseKey = `productDetails.${productId.replace('-', '')}`;
     const features = [];
     
     // Try to get features - different products have different numbers of features
     for (let i = 1; i <= 8; i++) {
-      const featureKey = `${baseKey}.feature${i}`;
+      const featureKey = `productDetails.${productKey}.feature${i}`;
       const feature = t(featureKey);
       if (feature && feature !== featureKey) {
         features.push(feature);
@@ -82,9 +98,10 @@ const ProductDetail = () => {
 
   // Get product specifications
   const getProductSpecs = () => {
-    if (!productId) return [];
+    const productKey = getProductKey(productId);
+    if (!productKey) return [];
     
-    const baseKey = `productDetails.${productId.replace('-', '')}.specs`;
+    const baseKey = `productDetails.${productKey}.specs`;
     try {
       return [
         { name: t(`${baseKey}.spec1Name`), value: t(`${baseKey}.spec1Value`) },
@@ -103,6 +120,7 @@ const ProductDetail = () => {
   const productImage = getProductImage();
   const productFeatures = getProductFeatures();
   const productSpecs = getProductSpecs();
+  const productKey = getProductKey(productId);
 
   // Check if product exists
   const validProducts = ['robo-slim', 'robo-eva', 'duo-connect', 'robo-picker'];
@@ -121,8 +139,6 @@ const ProductDetail = () => {
       </div>
     );
   }
-
-  const productKey = productId.replace('-', '');
 
   return (
     <main className="pt-24">
