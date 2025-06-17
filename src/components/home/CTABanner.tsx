@@ -2,8 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const CTABanner = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-duo-blue py-16">
       <div className="container">
@@ -17,15 +20,15 @@ const CTABanner = () => {
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="max-w-2xl">
               <h2 className="heading-lg text-white mb-4">
-                Pronto para revolucionar sua produção com automação inteligente?
+                {t('ctaBanner.title')}
               </h2>
               <p className="body-md text-gray-300 mb-6">
-                Converse com nossa equipe e descubra como nossas soluções podem aumentar a eficiência e segurança da sua indústria.
+                {t('ctaBanner.subtitle')}
               </p>
             </div>
             
             <Button asChild size="lg" className="bg-white text-duo-blue hover:bg-white/90 px-8 py-6 text-lg font-bold">
-              <Link to="/contato">Solicite um orçamento</Link>
+              <Link to="/contato">{t('ctaBanner.requestQuote')}</Link>
             </Button>
           </div>
         </div>

@@ -1,3 +1,4 @@
+
 export const es = {
   navbar: {
     aboutDuo: "Acerca de Duo",
@@ -50,7 +51,7 @@ export const es = {
     },
     duoConnect: {
       name: "Duo Connect",
-      description: "Sistema completo para monitoreo online del molino en tiempo real, accesible por PC, móvil o tablet."
+      description: "Sistema de monitoreo online del molino en tiempo real, accesible por PC, móvil o tablet."
     },
     roboPicker: {
       name: "Robot Picker",
@@ -88,49 +89,101 @@ export const es = {
   productDetails: {
     roboSlim: {
       tagline: "Robot para recargue con electrodo",
-      features: [
-        "Totalmente autónomo",
-        "Promedio 50% de economía de consumible",
-        "Cualquier tamaño de molino",
-        "Rodillos superiores e inferiores",
-        "Cualquier marca de electrodo",
-        "Ligero – transportado con las manos"
-      ]
+      detailedDescription: "El Robot Slim fue desarrollado para automatizar el proceso de recargue con electrodo en molinos de cualquier tamaño, eliminando la necesidad de intervención manual en un ambiente de alto riesgo. Su diseño compacto y ligero permite fácil transporte e instalación, mientras que su tecnología avanzada garantiza un acabado preciso y consistente, prolongando la vida útil de los equipos y reduciendo el tiempo de parada para mantenimiento.",
+      feature1: "Totalmente autónomo",
+      feature2: "Promedio 50% de economía de consumible",
+      feature3: "Cualquier tamaño de molino",
+      feature4: "Rodillos superiores e inferiores",
+      feature5: "Cualquier marca de electrodo",
+      feature6: "Ligero – transportado con las manos",
+      specs: {
+        spec1Name: "Dimensiones",
+        spec1Value: "4.000 x 300 x 300 mm",
+        spec2Name: "Peso",
+        spec2Value: "25 kg",
+        spec3Name: "Alimentación",
+        spec3Value: "220V trifásico",
+        spec4Name: "Consumo",
+        spec4Value: "3.5 kWh",
+        spec5Name: "Interfaz",
+        spec5Value: "Pantalla táctil 7\"",
+        spec6Name: "Conectividad",
+        spec6Value: "Wi-Fi, Ethernet"
+      }
     },
     roboEva: {
       tagline: "Robot para limpieza de evaporadores",
-      features: [
-        "Limpia todos los agujeros de forma 100% automática",
-        "Garantiza la limpieza completa de todos los agujeros en menos de 12 horas",
-        "Identifica agujeros obstruidos",
-        "Sin necesidad de seres humanos dentro de las cajas de evaporación",
-        "Costo anual inferior a la limpieza manual",
-        "Proceso seguro sin exposición a riesgo de accidentes"
-      ]
+      detailedDescription: "El Robot EVA representa una revolución en el mantenimiento de evaporadores, uno de los procesos más desafiantes y peligrosos de la industria sucroalcoholera. Con sistema de identificación de agujeros obstruidos y limpieza automatizada, el EVA elimina completamente la necesidad de intervención humana dentro de las cajas de evaporación, ambiente extremadamente insalubre. Además de las ganancias en seguridad ocupacional, el sistema proporciona economía significativa en comparación con los métodos tradicionales de limpieza manual.",
+      feature1: "Limpia todos los agujeros de forma 100% automática",
+      feature2: "Garantiza la limpieza completa de todos los agujeros en menos de 12 horas",
+      feature3: "Identifica agujeros obstruidos",
+      feature4: "Sin necesidad de seres humanos dentro de las cajas de evaporación",
+      feature5: "Costo anual inferior a la limpieza manual",
+      feature6: "Proceso seguro sin exposición a riesgo de accidentes",
+      specs: {
+        spec1Name: "Sistema de movimiento",
+        spec1Value: "Ejes X, A, B, C y D",
+        spec2Name: "Cabezal",
+        spec2Value: "Carrete doble",
+        spec3Name: "Base",
+        spec3Value: "Fijada en el centro de las cajas",
+        spec4Name: "Tiempo promedio de limpieza",
+        spec4Value: "8-12 horas por evaporador",
+        spec5Name: "Precisión",
+        spec5Value: "0.1mm",
+        spec6Name: "Interfaz",
+        spec6Value: "Panel de control táctil"
+      }
     },
     duoConnect: {
       tagline: "Monitoreo online del molino",
-      features: [
-        "Oscilación de ambos lados de los rodillos",
-        "RPM de los rodillos",
-        "Temperatura del aceite",
-        "Presión de trituración",
-        "Nivel del donnely",
-        "Monitoreo online en tiempo real por PC, móvil o tablet",
-        "Visualización de varios molinos en simultáneo",
-        "Modo consultor para varias plantas"
-      ]
+      detailedDescription: "Duo Connect es una plataforma avanzada de IoT industrial desarrollada específicamente para el monitoreo integral de molinos. El sistema recolecta y procesa datos en tiempo real, permitiendo el seguimiento simultáneo de múltiples parámetros críticos como oscilación de los rodillos, temperatura, presión y mucho más. Con interfaz intuitiva y accesible en diversos dispositivos, Duo Connect transforma datos en insights accionables, permitiendo la toma de decisiones basada en datos concretos para optimización del proceso industrial.",
+      feature1: "Oscilación de ambos lados de los rodillos",
+      feature2: "RPM de los rodillos",
+      feature3: "Temperatura del aceite",
+      feature4: "Presión de trituración",
+      feature5: "Nivel del donnely",
+      feature6: "Monitoreo online en tiempo real por PC, móvil o tablet",
+      feature7: "Visualización de varios molinos en simultáneo",
+      feature8: "Modo consultor para varias plantas",
+      specs: {
+        spec1Name: "Sensores",
+        spec1Value: "Alta precisión industrial",
+        spec2Name: "Escala Visual",
+        spec2Value: "0 a 50 mm",
+        spec3Name: "Transmisión",
+        spec3Value: "Wireless LoRa",
+        spec4Name: "Alcance",
+        spec4Value: "Hasta 15 km en línea de visión",
+        spec5Name: "Almacenamiento",
+        spec5Value: "Nube con respaldo local",
+        spec6Name: "APIs",
+        spec6Value: "REST para integración con sistemas existentes"
+      }
     },
     roboPicker: {
       tagline: "Robot para envasado y paletizado de azúcar",
-      features: [
-        "Alimentador de sacos automático",
-        "Doblado + Sellado, alarma automática para rotura o término del hilo de algodón",
-        "Doble pesaje para verificación",
-        "Sacos de 50kgs",
-        "720 sacos por hora",
-        "Informes de operación en la nube"
-      ]
+      detailedDescription: "El Robot Picker es una solución end-to-end para el proceso de envasado y paletizado de azúcar, integrando varias etapas que tradicionalmente requerirían múltiples equipos e intervención humana constante. Con capacidad para procesar hasta 720 sacos por hora, el sistema incluye alimentación automática, verificación doble de peso para garantía de calidad, y sistema de rechazo para unidades fuera de conformidad. Todo el proceso es monitoreado y registrado en la nube, permitiendo análisis detallados de productividad y trazabilidad completa.",
+      feature1: "Alimentador de sacos automático",
+      feature2: "Doblado + Sellado, alarma automática para rotura o término del hilo de algodón",
+      feature3: "Doble pesaje para verificación",
+      feature4: "Sacos de 50kgs",
+      feature5: "720 sacos por hora",
+      feature6: "Informes de operación en la nube",
+      specs: {
+        spec1Name: "Capacidad",
+        spec1Value: "720 sacos/hora",
+        spec2Name: "Precisión de pesaje",
+        spec2Value: "±10g",
+        spec3Name: "Peso del saco",
+        spec3Value: "50kg estándar",
+        spec4Name: "Potencia",
+        spec4Value: "12 kW",
+        spec5Name: "Dimensiones",
+        spec5Value: "8.5 x 4.2 x 3.5 m",
+        spec6Name: "Conectividad",
+        spec6Value: "Ethernet/Wi-Fi para informes en la nube"
+      }
     }
   },
   about: {

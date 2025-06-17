@@ -1,3 +1,4 @@
+
 export const pt = {
   navbar: {
     aboutDuo: "Sobre a Duo",
@@ -89,24 +90,55 @@ export const pt = {
   productDetails: {
     roboSlim: {
       tagline: "Robô para chapisco com eletrodo",
+      detailedDescription: "O Robô Slim foi desenvolvido para automatizar o processo de chapisco com eletrodo em moendas de qualquer tamanho, eliminando a necessidade de intervenção manual em um ambiente de alto risco. Seu design compacto e leve permite fácil transporte e instalação, enquanto sua tecnologia avançada garante um acabamento preciso e consistente, prolongando a vida útil dos equipamentos e reduzindo o tempo de parada para manutenção.",
       feature1: "Totalmente autônomo",
       feature2: "Média de 50% de economia de consumível",
       feature3: "Qualquer tamanho de moenda",
       feature4: "Rolos superiores e inferiores",
       feature5: "Qualquer marca de eletrodo",
-      feature6: "Leve – transportado com as mãos"
+      feature6: "Leve – transportado com as mãos",
+      specs: {
+        spec1Name: "Dimensões",
+        spec1Value: "4.000 x 300 x 300 mm",
+        spec2Name: "Peso",
+        spec2Value: "25 kg",
+        spec3Name: "Alimentação",
+        spec3Value: "220V trifásico",
+        spec4Name: "Consumo",
+        spec4Value: "3.5 kWh",
+        spec5Name: "Interface",
+        spec5Value: "Touch screen 7\"",
+        spec6Name: "Conectividade",
+        spec6Value: "Wi-Fi, Ethernet"
+      }
     },
     roboEva: {
       tagline: "Robô para limpeza de evaporadores",
+      detailedDescription: "O Robô EVA representa uma revolução na manutenção de evaporadores, um dos processos mais desafiadores e perigosos da indústria sucroalcooleira. Com sistema de identificação de furos obstruídos e limpeza automatizada, o EVA elimina completamente a necessidade de intervenção humana dentro das caixas de evaporação, ambiente extremamente insalubre. Além dos ganhos em segurança ocupacional, o sistema proporciona economia significativa em comparação com os métodos tradicionais de limpeza manual.",
       feature1: "Limpa todos os furos de forma 100% automático",
       feature2: "Garante a limpeza completa de todos os furos em menos de 12 horas",
       feature3: "Identifica furos obstruídos",
       feature4: "Sem necessidade de seres humanos dentro das caixas de evaporação",
       feature5: "Custo anual inferior à limpeza manual",
-      feature6: "Processo seguro sem exposição a risco de acidentes"
+      feature6: "Processo seguro sem exposição a risco de acidentes",
+      specs: {
+        spec1Name: "Sistema de movimento",
+        spec1Value: "Eixos X, A, B, C e D",
+        spec2Name: "Cabeçote",
+        spec2Value: "Carretel duplo",
+        spec3Name: "Base",
+        spec3Value: "Fixada no centro das caixas",
+        spec4Name: "Tempo médio de limpeza",
+        spec4Value: "8-12 horas por evaporador",
+        spec5Name: "Precisão",
+        spec5Value: "0.1mm",
+        spec6Name: "Interface",
+        spec6Value: "Painel de controle touch"
+      }
     },
     duoConnect: {
       tagline: "Monitoramento online da moenda",
+      detailedDescription: "O Duo Connect é uma plataforma avançada de IoT industrial desenvolvida especificamente para o monitoramento integral de moendas. O sistema coleta e processa dados em tempo real, permitindo o acompanhamento simultâneo de múltiplos parâmetros críticos como oscilação dos rolos, temperatura, pressão e muito mais. Com interface intuitiva e acessível em diversos dispositivos, o Duo Connect transforma dados em insights acionáveis, permitindo a tomada de decisões baseada em dados concretos para otimização do processo industrial.",
       feature1: "Oscilação dos dois lados dos rolos",
       feature2: "RPM dos rolos",
       feature3: "Temperatura do óleo",
@@ -114,16 +146,45 @@ export const pt = {
       feature5: "Nível do donnely",
       feature6: "Monitoramento online em tempo real por PC, celular ou tablet",
       feature7: "Visualização de várias moendas em simultâneo",
-      feature8: "Modo consultor para várias usinas"
+      feature8: "Modo consultor para várias usinas",
+      specs: {
+        spec1Name: "Sensores",
+        spec1Value: "Alta precisão industrial",
+        spec2Name: "Escala Visual",
+        spec2Value: "0 a 50 mm",
+        spec3Name: "Transmissão",
+        spec3Value: "Wireless LoRa",
+        spec4Name: "Alcance",
+        spec4Value: "Até 15 km em linha de visão",
+        spec5Name: "Armazenamento",
+        spec5Value: "Cloud com backup local",
+        spec6Name: "APIs",
+        spec6Value: "REST para integração com sistemas existentes"
+      }
     },
     roboPicker: {
       tagline: "Robô para envase e paletização de açúcar",
+      detailedDescription: "O Robô Picker é uma solução end-to-end para o processo de envase e paletização de açúcar, integrando várias etapas que tradicionalmente demandariam múltiplos equipamentos e intervenção humana constante. Com capacidade para processar até 720 sacos por hora, o sistema inclui alimentação automática, verificação dupla de peso para garantia de qualidade, e sistema de rejeição para unidades fora de conformidade. Todo o processo é monitorado e registrado na nuvem, permitindo análises detalhadas de produtividade e rastreabilidade completa.",
       feature1: "Alimentador de sacos automático",
       feature2: "Dobra + Selagem, alarme automático para quebra ou término do fio de algodão",
       feature3: "Dupla pesagem para verificação",
       feature4: "Sacos de 50kgs",
       feature5: "720 sacos por hora",
-      feature6: "Relatórios de operação na nuvem"
+      feature6: "Relatórios de operação na nuvem",
+      specs: {
+        spec1Name: "Capacidade",
+        spec1Value: "720 sacos/hora",
+        spec2Name: "Precisão de pesagem",
+        spec2Value: "±10g",
+        spec3Name: "Peso do saco",
+        spec3Value: "50kg standard",
+        spec4Name: "Potência",
+        spec4Value: "12 kW",
+        spec5Name: "Dimensões",
+        spec5Value: "8.5 x 4.2 x 3.5 m",
+        spec6Name: "Conectividade",
+        spec6Value: "Ethernet/Wi-Fi para relatórios na nuvem"
+      }
     }
   },
   about: {

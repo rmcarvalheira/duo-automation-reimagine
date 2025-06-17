@@ -1,3 +1,4 @@
+
 export const en = {
   navbar: {
     aboutDuo: "About Duo",
@@ -50,7 +51,7 @@ export const en = {
     },
     duoConnect: {
       name: "Duo Connect",
-      description: "Complete system for real-time online mill monitoring, accessible by PC, mobile or tablet."
+      description: "Real-time online mill monitoring system, accessible by PC, mobile or tablet."
     },
     roboPicker: {
       name: "Picker Robot",
@@ -88,49 +89,101 @@ export const en = {
   productDetails: {
     roboSlim: {
       tagline: "Robot for electrode surfacing",
-      features: [
-        "Fully autonomous",
-        "Average 50% consumable savings",
-        "Any mill size",
-        "Upper and lower rolls",
-        "Any electrode brand",
-        "Lightweight – hand transported"
-      ]
+      detailedDescription: "The Slim Robot was developed to automate the electrode surfacing process in mills of any size, eliminating the need for manual intervention in a high-risk environment. Its compact and lightweight design allows easy transport and installation, while its advanced technology ensures precise and consistent finishing, extending equipment life and reducing maintenance downtime.",
+      feature1: "Fully autonomous",
+      feature2: "Average 50% consumable savings",
+      feature3: "Any mill size",
+      feature4: "Upper and lower rolls",
+      feature5: "Any electrode brand",
+      feature6: "Lightweight – hand transported",
+      specs: {
+        spec1Name: "Dimensions",
+        spec1Value: "4.000 x 300 x 300 mm",
+        spec2Name: "Weight",
+        spec2Value: "25 kg",
+        spec3Name: "Power supply",
+        spec3Value: "220V three-phase",
+        spec4Name: "Consumption",
+        spec4Value: "3.5 kWh",
+        spec5Name: "Interface",
+        spec5Value: "7\" touch screen",
+        spec6Name: "Connectivity",
+        spec6Value: "Wi-Fi, Ethernet"
+      }
     },
     roboEva: {
       tagline: "Robot for evaporator cleaning",
-      features: [
-        "Cleans all holes 100% automatically",
-        "Ensures complete cleaning of all holes in less than 12 hours",
-        "Identifies blocked holes",
-        "No need for humans inside evaporation boxes",
-        "Annual cost lower than manual cleaning",
-        "Safe process without exposure to accident risk"
-      ]
+      detailedDescription: "The EVA Robot represents a revolution in evaporator maintenance, one of the most challenging and dangerous processes in the sugar-alcohol industry. With a system for identifying blocked holes and automated cleaning, EVA completely eliminates the need for human intervention inside evaporation boxes, an extremely unhealthy environment. In addition to occupational safety gains, the system provides significant savings compared to traditional manual cleaning methods.",
+      feature1: "Cleans all holes 100% automatically",
+      feature2: "Ensures complete cleaning of all holes in less than 12 hours",
+      feature3: "Identifies blocked holes",
+      feature4: "No need for humans inside evaporation boxes",
+      feature5: "Annual cost lower than manual cleaning",
+      feature6: "Safe process without exposure to accident risk",
+      specs: {
+        spec1Name: "Movement system",
+        spec1Value: "X, A, B, C and D axes",
+        spec2Name: "Head",
+        spec2Value: "Double reel",
+        spec3Name: "Base",
+        spec3Value: "Fixed in center of boxes",
+        spec4Name: "Average cleaning time",
+        spec4Value: "8-12 hours per evaporator",
+        spec5Name: "Precision",
+        spec5Value: "0.1mm",
+        spec6Name: "Interface",
+        spec6Value: "Touch control panel"
+      }
     },
     duoConnect: {
       tagline: "Online mill monitoring",
-      features: [
-        "Oscillation on both sides of the rolls",
-        "Roll RPM",
-        "Oil temperature",
-        "Crushing pressure",
-        "Donnelly level",
-        "Real-time online monitoring by PC, mobile or tablet",
-        "Simultaneous visualization of multiple mills",
-        "Consultant mode for multiple plants"
-      ]
+      detailedDescription: "Duo Connect is an advanced industrial IoT platform developed specifically for comprehensive mill monitoring. The system collects and processes data in real time, allowing simultaneous monitoring of multiple critical parameters such as roll oscillation, temperature, pressure and much more. With an intuitive interface accessible on various devices, Duo Connect transforms data into actionable insights, enabling data-driven decision making for industrial process optimization.",
+      feature1: "Oscillation on both sides of the rolls",
+      feature2: "Roll RPM",
+      feature3: "Oil temperature",
+      feature4: "Crushing pressure",
+      feature5: "Donnelly level",
+      feature6: "Real-time online monitoring by PC, mobile or tablet",
+      feature7: "Simultaneous visualization of multiple mills",
+      feature8: "Consultant mode for multiple plants",
+      specs: {
+        spec1Name: "Sensors",
+        spec1Value: "High industrial precision",
+        spec2Name: "Visual Scale",
+        spec2Value: "0 to 50 mm",
+        spec3Name: "Transmission",
+        spec3Value: "Wireless LoRa",
+        spec4Name: "Range",
+        spec4Value: "Up to 15 km line of sight",
+        spec5Name: "Storage",
+        spec5Value: "Cloud with local backup",
+        spec6Name: "APIs",
+        spec6Value: "REST for integration with existing systems"
+      }
     },
     roboPicker: {
       tagline: "Robot for sugar packaging and palletizing",
-      features: [
-        "Automatic bag feeder",
-        "Folding + Sealing, automatic alarm for cotton thread breakage or end",
-        "Double weighing for verification",
-        "50kg bags",
-        "720 bags per hour",
-        "Cloud operation reports"
-      ]
+      detailedDescription: "The Picker Robot is an end-to-end solution for the sugar packaging and palletizing process, integrating several stages that would traditionally require multiple equipment and constant human intervention. With capacity to process up to 720 bags per hour, the system includes automatic feeding, double weight verification for quality assurance, and rejection system for non-conforming units. The entire process is monitored and recorded in the cloud, allowing detailed productivity analysis and complete traceability.",
+      feature1: "Automatic bag feeder",
+      feature2: "Folding + Sealing, automatic alarm for cotton thread breakage or end",
+      feature3: "Double weighing for verification",
+      feature4: "50kg bags",
+      feature5: "720 bags per hour",
+      feature6: "Cloud operation reports",
+      specs: {
+        spec1Name: "Capacity",
+        spec1Value: "720 bags/hour",
+        spec2Name: "Weighing precision",
+        spec2Value: "±10g",
+        spec3Name: "Bag weight",
+        spec3Value: "50kg standard",
+        spec4Name: "Power",
+        spec4Value: "12 kW",
+        spec5Name: "Dimensions",
+        spec5Value: "8.5 x 4.2 x 3.5 m",
+        spec6Name: "Connectivity",
+        spec6Value: "Ethernet/Wi-Fi for cloud reports"
+      }
     }
   },
   about: {

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const clients = [
   { name: 'Raízen', id: 'raizen', logo: '/lovable-uploads/25f5606a-1a31-409e-adf6-b7ef7897c59e.png' },
@@ -24,10 +25,12 @@ const clients = [
 ];
 
 const ClientLogos = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-12 bg-gray-50 border-y border-gray-200">
       <div className="container">
-        <h2 className="text-center text-xl text-gray-600 mb-8">Confiado por empresas líderes do setor</h2>
+        <h2 className="text-center text-xl text-gray-600 mb-8">{t('clientLogos.title')}</h2>
         
         <div className="flex flex-wrap justify-center gap-8 items-center">
           {clients.map((client) => (
