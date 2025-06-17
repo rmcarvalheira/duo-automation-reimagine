@@ -102,7 +102,7 @@ const Clients = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="bg-duo-blue p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-3">Melhorias em dezenas de usinas em todo o Brasil</h3>
+                  <h3 className="text-2xl font-bold mb-3">Ganhos em dezenas de usinas em todo o Brasil</h3>
                   <p className="text-xl mb-6">Aumento de eficiência e segurança com o Robô de Chapisco</p>
                   
                   <div className="mb-6">
@@ -153,7 +153,7 @@ const Clients = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="md:order-2 bg-duo-blue p-8 text-white">
-                  <h3 className="text-2xl font-bold mb-3">Raízen</h3>
+                  <h3 className="text-2xl font-bold mb-3">Resultados esperados</h3>
                   <p className="text-xl mb-6">Monitoramento em tempo real com Duo Connect</p>
                   
                   <div className="mb-6">
@@ -166,10 +166,7 @@ const Clients = () => {
                   
                   <div className="mb-6">
                     <h4 className="text-duo-yellow font-medium mb-2">Solução:</h4>
-                    <p className="text-gray-300">
-                      Implementação do sistema Duo Connect em todas as moendas, permitindo 
-                      o monitoramento integral e em tempo real de múltiplos parâmetros.
-                    </p>
+                    <p className="text-gray-300">Implementação do sistema Duo Connect em todas as ternos, permitindo o monitoramento integral e em tempo real de múltiplos parâmetros.</p>
                   </div>
                 </div>
                 
@@ -178,19 +175,23 @@ const Clients = () => {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div className="p-4 border border-gray-200 rounded-lg text-center">
-                      <p className="text-3xl font-bold text-duo-blue mb-2">23%</p>
+                      <p className="text-3xl font-bold text-duo-blue mb-2">
+                    </p>
                       <p className="text-gray-600">Aumento na produtividade</p>
                     </div>
                     <div className="p-4 border border-gray-200 rounded-lg text-center">
-                      <p className="text-3xl font-bold text-duo-blue mb-2">68%</p>
+                      <p className="text-3xl font-bold text-duo-blue mb-2">
+                    </p>
                       <p className="text-gray-600">Redução em paradas não programadas</p>
                     </div>
                     <div className="p-4 border border-gray-200 rounded-lg text-center">
-                      <p className="text-3xl font-bold text-duo-blue mb-2">15%</p>
+                      <p className="text-3xl font-bold text-duo-blue mb-2">
+                    </p>
                       <p className="text-gray-600">Economia de energia</p>
                     </div>
                     <div className="p-4 border border-gray-200 rounded-lg text-center">
-                      <p className="text-3xl font-bold text-duo-blue mb-2">3.5M</p>
+                      <p className="text-3xl font-bold text-duo-blue mb-2">
+                    </p>
                       <p className="text-gray-600">Ganho financeiro anual (R$)</p>
                     </div>
                   </div>
