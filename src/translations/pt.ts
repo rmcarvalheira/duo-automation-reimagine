@@ -193,6 +193,50 @@ export const pt = {
       testimonialAuthor: "— Consultor de moendas"
     }
   },
+  contact: {
+    title: "Entre em Contato",
+    subtitle: "Estamos à disposição para esclarecer suas dúvidas, receber sugestões e ajudar a encontrar a melhor solução para sua indústria.",
+    sendMessage: "Envie uma mensagem",
+    fullName: "Nome completo",
+    email: "E-mail",
+    phone: "Telefone",
+    company: "Empresa",
+    segment: "Segmento",
+    interest: "Interesse",
+    message: "Mensagem",
+    messagePlaceholder: "Escreva sua mensagem aqui",
+    sendButton: "Enviar mensagem",
+    sending: "Enviando...",
+    contactInfo: "Informações de Contato",
+    phones: "Telefones:",
+    administrative: "Administrativo:",
+    sales: "Vendas:",
+    technicalSupport: "Suporte técnico:",
+    supplies: "Suprimentos:",
+    headquarters: "Matriz:",
+    quickService: "Atendimento Rápido",
+    quickServiceText: "Precisa de uma resposta rápida? Entre em contato pelo WhatsApp e fale diretamente com nossa equipe.",
+    whatsappButton: "Falar via WhatsApp",
+    ourLocation: "Nossa Localização",
+    servicePoles: "Polos de Atendimento",
+    servicePolesText: "Contamos com equipes técnicas em diversos polos para atendimento rápido e eficiente.",
+    segments: {
+      select: "Selecione",
+      sucroenergetic: "Sucroenergético",
+      food: "Alimentício",
+      agricultural: "Agrícola",
+      other: "Outro"
+    },
+    interests: {
+      select: "Selecione",
+      roboSlim: "Robô Slim",
+      roboEva: "Robô EVA",
+      duoConnect: "Duo Connect",
+      roboPicker: "Robô Picker",
+      customSolutions: "Soluções Customizadas",
+      other: "Outro"
+    }
+  },
   common: {
     loading: "Carregando...",
     error: "Erro",

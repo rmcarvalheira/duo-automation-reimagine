@@ -193,6 +193,50 @@ export const en = {
       testimonialAuthor: "— Mill consultant"
     }
   },
+  contact: {
+    title: "Contact Us",
+    subtitle: "We are available to answer your questions, receive suggestions and help find the best solution for your industry.",
+    sendMessage: "Send a message",
+    fullName: "Full name",
+    email: "Email",
+    phone: "Phone",
+    company: "Company",
+    segment: "Segment",
+    interest: "Interest",
+    message: "Message",
+    messagePlaceholder: "Write your message here",
+    sendButton: "Send message",
+    sending: "Sending...",
+    contactInfo: "Contact Information",
+    phones: "Phones:",
+    administrative: "Administrative:",
+    sales: "Sales:",
+    technicalSupport: "Technical support:",
+    supplies: "Supplies:",
+    headquarters: "Headquarters:",
+    quickService: "Quick Service",
+    quickServiceText: "Need a quick response? Contact us via WhatsApp and talk directly to our team.",
+    whatsappButton: "Talk via WhatsApp",
+    ourLocation: "Our Location",
+    servicePoles: "Service Hubs",
+    servicePolesText: "We have technical teams in various hubs for fast and efficient service.",
+    segments: {
+      select: "Select",
+      sucroenergetic: "Sugar-energy",
+      food: "Food",
+      agricultural: "Agricultural",
+      other: "Other"
+    },
+    interests: {
+      select: "Select",
+      roboSlim: "Slim Robot",
+      roboEva: "EVA Robot",
+      duoConnect: "Duo Connect",
+      roboPicker: "Picker Robot",
+      customSolutions: "Custom Solutions",
+      other: "Other"
+    }
+  },
   common: {
     loading: "Loading...",
     error: "Error",
