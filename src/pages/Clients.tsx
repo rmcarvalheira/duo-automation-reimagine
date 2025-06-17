@@ -199,7 +199,7 @@ const Clients = () => {
                   <blockquote className="italic border-l-4 border-duo-yellow pl-4 text-gray-700">
                     "O Duo Connect nos colocou em outro patamar de controle operacional. A visibilidade 
                     que temos agora permite otimizações que antes eram impossíveis de implementar."
-                    <footer className="mt-2 font-medium">— Gerente Industrial, Raízen</footer>
+                    <footer className="mt-2 font-medium">— Consultor de moendas</footer>
                   </blockquote>
                 </div>
               </div>
