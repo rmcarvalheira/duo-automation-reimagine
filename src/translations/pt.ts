@@ -69,6 +69,7 @@ export const pt = {
     description: "Soluções de automação industrial para aumentar a produtividade e segurança da agroindústria, substituindo mão de obra por robôs em trabalhos perigosos e insalubres.",
     quickLinks: "Links Rápidos",
     products: "Produtos",
+    aboutUs: "Sobre Nós",
     contact: "Contato",
     talkToUs: "Fale Conosco",
     name: "Nome",
@@ -88,49 +89,41 @@ export const pt = {
   productDetails: {
     roboSlim: {
       tagline: "Robô para chapisco com eletrodo",
-      features: [
-        "Totalmente autônomo",
-        "Média de 50% de economia de consumível",
-        "Qualquer tamanho de moenda",
-        "Rolos superiores e inferiores",
-        "Qualquer marca de eletrodo",
-        "Leve – transportado com as mãos"
-      ]
+      feature1: "Totalmente autônomo",
+      feature2: "Média de 50% de economia de consumível",
+      feature3: "Qualquer tamanho de moenda",
+      feature4: "Rolos superiores e inferiores",
+      feature5: "Qualquer marca de eletrodo",
+      feature6: "Leve – transportado com as mãos"
     },
     roboEva: {
       tagline: "Robô para limpeza de evaporadores",
-      features: [
-        "Limpa todos os furos de forma 100% automático",
-        "Garante a limpeza completa de todos os furos em menos de 12 horas",
-        "Identifica furos obstruídos",
-        "Sem necessidade de seres humanos dentro das caixas de evaporação",
-        "Custo anual inferior à limpeza manual",
-        "Processo seguro sem exposição a risco de acidentes"
-      ]
+      feature1: "Limpa todos os furos de forma 100% automático",
+      feature2: "Garante a limpeza completa de todos os furos em menos de 12 horas",
+      feature3: "Identifica furos obstruídos",
+      feature4: "Sem necessidade de seres humanos dentro das caixas de evaporação",
+      feature5: "Custo anual inferior à limpeza manual",
+      feature6: "Processo seguro sem exposição a risco de acidentes"
     },
     duoConnect: {
       tagline: "Monitoramento online da moenda",
-      features: [
-        "Oscilação dos dois lados dos rolos",
-        "RPM dos rolos",
-        "Temperatura do óleo",
-        "Pressão de esmagamento",
-        "Nível do donnely",
-        "Monitoramento online em tempo real por PC, celular ou tablet",
-        "Visualização de várias moendas em simultâneo",
-        "Modo consultor para várias usinas"
-      ]
+      feature1: "Oscilação dos dois lados dos rolos",
+      feature2: "RPM dos rolos",
+      feature3: "Temperatura do óleo",
+      feature4: "Pressão de esmagamento",
+      feature5: "Nível do donnely",
+      feature6: "Monitoramento online em tempo real por PC, celular ou tablet",
+      feature7: "Visualização de várias moendas em simultâneo",
+      feature8: "Modo consultor para várias usinas"
     },
     roboPicker: {
       tagline: "Robô para envase e paletização de açúcar",
-      features: [
-        "Alimentador de sacos automático",
-        "Dobra + Selagem, alarme automático para quebra ou término do fio de algodão",
-        "Dupla pesagem para verificação",
-        "Sacos de 50kgs",
-        "720 sacos por hora",
-        "Relatórios de operação na nuvem"
-      ]
+      feature1: "Alimentador de sacos automático",
+      feature2: "Dobra + Selagem, alarme automático para quebra ou término do fio de algodão",
+      feature3: "Dupla pesagem para verificação",
+      feature4: "Sacos de 50kgs",
+      feature5: "720 sacos por hora",
+      feature6: "Relatórios de operação na nuvem"
     }
   },
   about: {

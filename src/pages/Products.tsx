@@ -15,7 +15,14 @@ const Products = () => {
       tagline: t('productDetails.roboSlim.tagline'),
       description: t('productOverview.roboSlim.description'),
       image: '/lovable-uploads/37d70281-7c79-4b39-a5c7-3ff018f6c0c1.png',
-      features: t('productDetails.roboSlim.features')
+      features: [
+        t('productDetails.roboSlim.feature1'),
+        t('productDetails.roboSlim.feature2'),
+        t('productDetails.roboSlim.feature3'),
+        t('productDetails.roboSlim.feature4'),
+        t('productDetails.roboSlim.feature5'),
+        t('productDetails.roboSlim.feature6')
+      ]
     },
     {
       id: 'robo-eva',
@@ -23,7 +30,14 @@ const Products = () => {
       tagline: t('productDetails.roboEva.tagline'),
       description: t('productOverview.roboEva.description'),
       image: '/lovable-uploads/79924496-c228-4b3e-9a6e-3cd2d97ee48a.png',
-      features: t('productDetails.roboEva.features')
+      features: [
+        t('productDetails.roboEva.feature1'),
+        t('productDetails.roboEva.feature2'),
+        t('productDetails.roboEva.feature3'),
+        t('productDetails.roboEva.feature4'),
+        t('productDetails.roboEva.feature5'),
+        t('productDetails.roboEva.feature6')
+      ]
     },
     {
       id: 'duo-connect',
@@ -31,7 +45,16 @@ const Products = () => {
       tagline: t('productDetails.duoConnect.tagline'),
       description: t('productOverview.duoConnect.description'),
       image: '/lovable-uploads/f587cc4f-5b62-462f-9ebb-bfb99a0b8ee6.png',
-      features: t('productDetails.duoConnect.features')
+      features: [
+        t('productDetails.duoConnect.feature1'),
+        t('productDetails.duoConnect.feature2'),
+        t('productDetails.duoConnect.feature3'),
+        t('productDetails.duoConnect.feature4'),
+        t('productDetails.duoConnect.feature5'),
+        t('productDetails.duoConnect.feature6'),
+        t('productDetails.duoConnect.feature7'),
+        t('productDetails.duoConnect.feature8')
+      ]
     },
     {
       id: 'robo-picker',
@@ -39,7 +62,14 @@ const Products = () => {
       tagline: t('productDetails.roboPicker.tagline'),
       description: t('productOverview.roboPicker.description'),
       image: '/lovable-uploads/c45da574-cf7d-4bda-ae96-35e63d3e273f.png',
-      features: t('productDetails.roboPicker.features')
+      features: [
+        t('productDetails.roboPicker.feature1'),
+        t('productDetails.roboPicker.feature2'),
+        t('productDetails.roboPicker.feature3'),
+        t('productDetails.roboPicker.feature4'),
+        t('productDetails.roboPicker.feature5'),
+        t('productDetails.roboPicker.feature6')
+      ]
     },
   ];
 
