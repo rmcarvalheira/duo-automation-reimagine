@@ -20,9 +20,9 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <LanguageProvider>
-      <TooltipProvider>
-        <Toaster />
+    <TooltipProvider>
+      <Toaster />
+      <LanguageProvider>
         <BrowserRouter>
           <div className="min-h-screen bg-background font-sans antialiased">
             <Navbar />
@@ -40,8 +40,8 @@ const App = () => (
             <Footer />
           </div>
         </BrowserRouter>
-      </TooltipProvider>
-    </LanguageProvider>
+      </LanguageProvider>
+    </TooltipProvider>
   </QueryClientProvider>
 );
 
