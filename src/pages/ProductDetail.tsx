@@ -122,7 +122,7 @@ const ProductDetail = () => {
   // Get product data based on ID
   const product = productData[productId as keyof typeof productData];
 
-  // Handle PDF download for Robô Slim and Duo Connect
+  // Handle PDF download for all products
   const handleDownload = () => {
     if (productId === 'robo-slim') {
       const link = document.createElement('a');
@@ -135,6 +135,13 @@ const ProductDetail = () => {
       const link = document.createElement('a');
       link.href = 'https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//catalogo%20connect.pdf';
       link.download = 'catalogo-duo-connect.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else if (productId === 'robo-picker') {
+      const link = document.createElement('a');
+      link.href = 'https://uaapedxgvyucrhppeeiv.supabase.co/storage/v1/object/public/videos//robo%20picker%20tec.pdf';
+      link.download = 'robo-picker-especificacoes.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -187,7 +194,7 @@ const ProductDetail = () => {
                 <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
                   <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
-                {productId === 'robo-slim' || productId === 'duo-connect' ? <Button onClick={handleDownload} variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
+                {productId === 'robo-slim' || productId === 'duo-connect' || productId === 'robo-picker' ? <Button onClick={handleDownload} variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                     <Download className="mr-2 h-4 w-4" /> Baixar catálogo
                   </Button> : <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                     <Download className="mr-2 h-4 w-4" /> Baixar catálogo
@@ -249,7 +256,7 @@ const ProductDetail = () => {
                 </div>
                 
                 <div className="mt-8">
-                  {productId === 'robo-slim' || productId === 'duo-connect' ? <Button onClick={handleDownload} className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
+                  {productId === 'robo-slim' || productId === 'duo-connect' || productId === 'robo-picker' ? <Button onClick={handleDownload} className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                       <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
                     </Button> : <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                       <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
