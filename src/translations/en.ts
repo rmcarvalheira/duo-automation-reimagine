@@ -1,4 +1,3 @@
-
 export const en = {
   navbar: {
     aboutDuo: "About Duo",
@@ -85,6 +84,54 @@ export const en = {
       other: "Other"
     },
     copyright: "All rights reserved."
+  },
+  productDetails: {
+    roboSlim: {
+      tagline: "Robot for electrode surfacing",
+      features: [
+        "Fully autonomous",
+        "Average 50% consumable savings",
+        "Any mill size",
+        "Upper and lower rolls",
+        "Any electrode brand",
+        "Lightweight – hand transported"
+      ]
+    },
+    roboEva: {
+      tagline: "Robot for evaporator cleaning",
+      features: [
+        "Cleans all holes 100% automatically",
+        "Ensures complete cleaning of all holes in less than 12 hours",
+        "Identifies blocked holes",
+        "No need for humans inside evaporation boxes",
+        "Annual cost lower than manual cleaning",
+        "Safe process without exposure to accident risk"
+      ]
+    },
+    duoConnect: {
+      tagline: "Online mill monitoring",
+      features: [
+        "Oscillation on both sides of the rolls",
+        "Roll RPM",
+        "Oil temperature",
+        "Crushing pressure",
+        "Donnelly level",
+        "Real-time online monitoring by PC, mobile or tablet",
+        "Simultaneous visualization of multiple mills",
+        "Consultant mode for multiple plants"
+      ]
+    },
+    roboPicker: {
+      tagline: "Robot for sugar packaging and palletizing",
+      features: [
+        "Automatic bag feeder",
+        "Folding + Sealing, automatic alarm for cotton thread breakage or end",
+        "Double weighing for verification",
+        "50kg bags",
+        "720 bags per hour",
+        "Cloud operation reports"
+      ]
+    }
   },
   about: {
     title: "About Duo Automation",

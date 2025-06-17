@@ -1,4 +1,3 @@
-
 export const es = {
   navbar: {
     aboutDuo: "Acerca de Duo",
@@ -85,6 +84,54 @@ export const es = {
       other: "Otro"
     },
     copyright: "Todos los derechos reservados."
+  },
+  productDetails: {
+    roboSlim: {
+      tagline: "Robot para recargue con electrodo",
+      features: [
+        "Totalmente autónomo",
+        "Promedio 50% de economía de consumible",
+        "Cualquier tamaño de molino",
+        "Rodillos superiores e inferiores",
+        "Cualquier marca de electrodo",
+        "Ligero – transportado con las manos"
+      ]
+    },
+    roboEva: {
+      tagline: "Robot para limpieza de evaporadores",
+      features: [
+        "Limpia todos los agujeros de forma 100% automática",
+        "Garantiza la limpieza completa de todos los agujeros en menos de 12 horas",
+        "Identifica agujeros obstruidos",
+        "Sin necesidad de seres humanos dentro de las cajas de evaporación",
+        "Costo anual inferior a la limpieza manual",
+        "Proceso seguro sin exposición a riesgo de accidentes"
+      ]
+    },
+    duoConnect: {
+      tagline: "Monitoreo online del molino",
+      features: [
+        "Oscilación de ambos lados de los rodillos",
+        "RPM de los rodillos",
+        "Temperatura del aceite",
+        "Presión de trituración",
+        "Nivel del donnely",
+        "Monitoreo online en tiempo real por PC, móvil o tablet",
+        "Visualización de varios molinos en simultáneo",
+        "Modo consultor para varias plantas"
+      ]
+    },
+    roboPicker: {
+      tagline: "Robot para envasado y paletizado de azúcar",
+      features: [
+        "Alimentador de sacos automático",
+        "Doblado + Sellado, alarma automática para rotura o término del hilo de algodón",
+        "Doble pesaje para verificación",
+        "Sacos de 50kgs",
+        "720 sacos por hora",
+        "Informes de operación en la nube"
+      ]
+    }
   },
   about: {
     title: "Acerca de Duo Automation",
