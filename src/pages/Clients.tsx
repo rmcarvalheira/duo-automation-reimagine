@@ -142,8 +142,7 @@ const Clients = () => {
                   </div>
                   
                   <blockquote className="italic border-l-4 border-duo-yellow pl-4 text-gray-700">
-                    "A implementação do Robô EVA transformou completamente nosso processo de manutenção, 
-                    reduzindo custos e, mais importante, eliminando os riscos à saúde dos nossos colaboradores."
+                    "A aplicação é uniforme e precisa, o que contribui para a proteção das camisas, possibilita melhor preparo da cana e maior eficiência de extração do açúcar, e oferece mais segurança às pessoas."
                     <footer className="mt-2 font-medium">— Geraldo Borin - Diretor Industrial Corporativo, Cocal</footer>
                   </blockquote>
                 </div>
