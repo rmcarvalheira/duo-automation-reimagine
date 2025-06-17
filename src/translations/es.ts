@@ -107,7 +107,7 @@ export const es = {
     title: "Nuestros Productos",
     subtitle: "Conoce las soluciones de automatización desarrolladas por Duo para aumentar la productividad y seguridad de tu industria",
     features: "Características:",
-    seeDetails: "Ver de talles"
+    seeDetails: "Ver detalles"
   },
   productDetail: {
     productNotFound: "Producto no encontrado",
@@ -191,6 +191,50 @@ export const es = {
       annualFinancialGain: "Ganancia financiera anual (R$)",
       testimonial: "Duo Connect nos puso en otro nivel de control operacional. La visibilidad que tenemos ahora permite optimizaciones que antes eran imposibles de implementar.",
       testimonialAuthor: "— Consultor de molinos"
+    }
+  },
+  contact: {
+    title: "Contáctanos",
+    subtitle: "Estamos disponibles para responder tus preguntas, recibir sugerencias y ayudar a encontrar la mejor solución para tu industria.",
+    sendMessage: "Enviar un mensaje",
+    fullName: "Nombre completo",
+    email: "Correo electrónico",
+    phone: "Teléfono",
+    company: "Empresa",
+    segment: "Segmento",
+    interest: "Interés",
+    message: "Mensaje",
+    messagePlaceholder: "Escribe tu mensaje aquí",
+    sendButton: "Enviar mensaje",
+    sending: "Enviando...",
+    contactInfo: "Información de Contacto",
+    phones: "Teléfonos:",
+    administrative: "Administrativo:",
+    sales: "Ventas:",
+    technicalSupport: "Soporte técnico:",
+    supplies: "Suministros:",
+    headquarters: "Matriz:",
+    quickService: "Atención Rápida",
+    quickServiceText: "¿Necesitas una respuesta rápida? Contáctanos por WhatsApp y habla directamente con nuestro equipo.",
+    whatsappButton: "Hablar por WhatsApp",
+    ourLocation: "Nuestra Ubicación",
+    servicePoles: "Polos de Atención",
+    servicePolesText: "Contamos con equipos técnicos en varios polos para atención rápida y eficiente.",
+    segments: {
+      select: "Seleccionar",
+      sucroenergetic: "Sucroenergético",
+      food: "Alimentario",
+      agricultural: "Agrícola",
+      other: "Otro"
+    },
+    interests: {
+      select: "Seleccionar",
+      roboSlim: "Robot Slim",
+      roboEva: "Robot EVA",
+      duoConnect: "Duo Connect",
+      roboPicker: "Robot Picker",
+      customSolutions: "Soluciones Personalizadas",
+      other: "Otro"
     }
   },
   common: {
