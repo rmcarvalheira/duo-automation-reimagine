@@ -141,6 +141,18 @@ const ProductDetail = () => {
     }
   };
 
+  // Get YouTube video ID based on product
+  const getYouTubeVideoId = () => {
+    if (productId === 'robo-picker') {
+      return 'cJppywT27rs';
+    } else if (productId === 'robo-slim') {
+      return 'F8rTfknqCnk';
+    }
+    return null;
+  };
+
+  const youtubeVideoId = getYouTubeVideoId();
+
   // Handle invalid product ID
   if (!product) {
     return <div className="pt-24 section-padding">
@@ -210,7 +222,19 @@ const ProductDetail = () => {
               
               <h2 className="heading-md text-duo-blue mb-6">Vídeo demonstrativo</h2>
               <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
-                <p className="text-gray-500">Em breve vídeo real da aplicação em campo</p>
+                {youtubeVideoId ? (
+                  <iframe
+                    className="w-full h-full rounded-lg"
+                    style={{ aspectRatio: '16/9', minHeight: '360px' }}
+                    src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+                    title="Vídeo demonstrativo do produto"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <p className="text-gray-500">Em breve vídeo real da aplicação em campo</p>
+                )}
               </div>
             </div>
             
