@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -115,7 +114,6 @@ const productData = {
     }]
   }
 };
-
 const ProductDetail = () => {
   const {
     productId
@@ -177,19 +175,11 @@ const ProductDetail = () => {
                 <Button asChild className="text-duo-blue font-bold bg-duo-yellow">
                   <Link to="/contato">Solicitar orçamento</Link>
                 </Button>
-                {(productId === 'robo-slim' || productId === 'duo-connect') ? (
-                  <Button 
-                    onClick={handleDownload}
-                    variant="outline" 
-                    className="border-white hover:bg-white text-duo-blue font-bold"
-                  >
+                {productId === 'robo-slim' || productId === 'duo-connect' ? <Button onClick={handleDownload} variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                     <Download className="mr-2 h-4 w-4" /> Baixar catálogo
-                  </Button>
-                ) : (
-                  <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
+                  </Button> : <Button variant="outline" className="border-white hover:bg-white text-duo-blue font-bold">
                     <Download className="mr-2 h-4 w-4" /> Baixar catálogo
-                  </Button>
-                )}
+                  </Button>}
               </div>
             </div>
             
@@ -220,7 +210,7 @@ const ProductDetail = () => {
               
               <h2 className="heading-md text-duo-blue mb-6">Vídeo demonstrativo</h2>
               <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg mb-8 flex items-center justify-center">
-                <p className="text-gray-500">Vídeo demonstrativo não disponível</p>
+                <p className="text-gray-500">Em breve vídeo real da aplicação em campo</p>
               </div>
             </div>
             
@@ -235,18 +225,11 @@ const ProductDetail = () => {
                 </div>
                 
                 <div className="mt-8">
-                  {(productId === 'robo-slim' || productId === 'duo-connect') ? (
-                    <Button 
-                      onClick={handleDownload}
-                      className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold"
-                    >
+                  {productId === 'robo-slim' || productId === 'duo-connect' ? <Button onClick={handleDownload} className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                       <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
-                    </Button>
-                  ) : (
-                    <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
+                    </Button> : <Button className="w-full bg-white text-duo-blue hover:bg-white/90 border-2 border-duo-blue font-bold">
                       <Download className="mr-2 h-4 w-4" /> Baixar especificações técnicas
-                    </Button>
-                  )}
+                    </Button>}
                 </div>
               </div>
               
