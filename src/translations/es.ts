@@ -14,10 +14,10 @@ export const es = {
   },
   hero: {
     title: "Soluciones de automatización que",
-    titleHighlight: " revolucionan la agroindustria",
-    subtitle: "Aumentamos la productividad y seguridad de la industria sustituyendo mano de obra por robots en trabajos peligrosos e insalubres.",
+    titleHighlight: " revolucionan el agronegocio",
+    subtitle: "Aumentamos la productividad y seguridad de la industria reemplazando la mano de obra con robots en trabajos peligrosos e insalubres.",
     talkToTeam: "Habla con nuestro equipo",
-    knowProducts: "Conoce nuestros productos",
+    knowProducts: "Descubre nuestros productos",
     scrollDown: "Desplázate hacia abajo"
   },
   valuePillars: {
@@ -25,7 +25,7 @@ export const es = {
     subtitle: "Entregamos soluciones que transforman la industria a través de tres pilares fundamentales",
     innovation: {
       title: "Innovación",
-      description: "Desarrollamos tecnologías pioneras enfocadas en la realidad de la agroindustria brasileña."
+      description: "Desarrollamos tecnologías pioneras enfocadas en la realidad del agronegocio brasileño."
     },
     patent: {
       title: "Patente",
@@ -33,21 +33,26 @@ export const es = {
     },
     results: {
       title: "Resultados",
-      description: "Soluciones que garantizan mayor productividad, seguridad y retorno de la inversión."
+      description: "Soluciones que garantizan mayor productividad, seguridad y retorno de inversión."
     }
+  },
+  institutionalVideo: {
+    title: "Video Institucional",
+    subtitle: "Conoce nuestra historia, tecnología y el impacto de nuestras soluciones en el agronegocio",
+    watchVideo: "Ver video"
   },
   productOverview: {
     title: "Nuestros Productos",
-    subtitle: "Conoce las soluciones de automatización desarrolladas por Duo para aumentar la productividad y seguridad de tu industria",
+    subtitle: "Descubre las soluciones de automatización desarrolladas por Duo para aumentar la productividad y seguridad de tu industria",
     seeMore: "Saber más",
     seeAll: "Ver todos los productos",
     roboSlim: {
       name: "Robot Slim",
-      description: "Robot para recargue con electrodo, totalmente autónomo y con economía promedio del 50% de consumible."
+      description: "Robot para soldadura de electrodos, totalmente autónomo con ahorro promedio del 50% del consumible."
     },
     roboEva: {
       name: "Robot EVA",
-      description: "Robot para limpieza de evaporadores que garantiza la limpieza completa de todos los agujeros en menos de 12 horas."
+      description: "Robot para limpieza de evaporador que garantiza limpieza completa de todos los agujeros en menos de 12 horas."
     },
     duoConnect: {
       name: "Duo Connect",
@@ -55,25 +60,25 @@ export const es = {
     },
     roboPicker: {
       name: "Robot Picker",
-      description: "Robot para envasado y paletizado de azúcar, con alimentador automático de sacos e informes de operación en la nube."
+      description: "Robot para empaquetado y paletización de azúcar, con alimentador automático de sacos e informes de operación en la nube."
     }
   },
   clientLogos: {
-    title: "Confiado por empresas líderes del sector"
+    title: "Empresas líderes del sector confían en nosotros"
   },
   ctaBanner: {
     title: "¿Listo para revolucionar tu producción con automatización inteligente?",
-    subtitle: "Conversa con nuestro equipo y descubre cómo nuestras soluciones pueden aumentar la eficiencia y seguridad de tu industria.",
-    requestQuote: "Solicita un presupuesto"
+    subtitle: "Habla con nuestro equipo y descubre cómo nuestras soluciones pueden aumentar la eficiencia y seguridad de tu industria.",
+    requestQuote: "Solicitar presupuesto"
   },
   footer: {
-    description: "Soluciones de automatización industrial para aumentar la productividad y seguridad de la agroindustria, sustituyendo mano de obra por robots en trabajos peligrosos e insalubres.",
+    description: "Soluciones de automatización industrial para aumentar la productividad y seguridad del agronegocio, reemplazando mano de obra con robots en trabajos peligrosos e insalubres.",
     quickLinks: "Enlaces Rápidos",
     products: "Productos",
     contact: "Contacto",
     talkToUs: "Contáctanos",
     name: "Nombre",
-    email: "Correo electrónico",
+    email: "Email",
     segment: "Segmento",
     message: "Mensaje",
     sendMessage: "Enviar Mensaje",

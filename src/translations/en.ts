@@ -1,4 +1,3 @@
-
 export const en = {
   navbar: {
     aboutDuo: "About Duo",
@@ -35,6 +34,11 @@ export const en = {
       title: "Results",
       description: "Solutions that guarantee higher productivity, safety and return on investment."
     }
+  },
+  institutionalVideo: {
+    title: "Institutional Video",
+    subtitle: "Learn about our history, technology and the impact of our solutions on agribusiness",
+    watchVideo: "Watch video"
   },
   productOverview: {
     title: "Our Products",
