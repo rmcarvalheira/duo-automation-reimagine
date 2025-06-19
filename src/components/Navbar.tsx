@@ -29,10 +29,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
   const cycleLanguage = () => {
     const languages = ['pt', 'en', 'es'] as const;
     const currentIndex = languages.indexOf(language);
@@ -51,7 +47,7 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm py-2' : 'bg-transparent py-4'
       }`}
     >
@@ -124,7 +120,7 @@ const Navbar = () => {
           
           <button
             onClick={toggleMenu}
-            className="text-duo-blue z-[70] relative"
+            className="text-duo-blue"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -132,98 +128,48 @@ const Navbar = () => {
       </nav>
       
       {/* Mobile Navigation Menu */}
-      {isOpen && (
-        <>
-          {/* Overlay/Backdrop - clickable to close menu */}
-          <div 
-            className="lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
-            onClick={closeMenu}
-          />
-          
-          {/* Menu Content */}
-          <div className="lg:hidden fixed inset-0 z-50 transition-transform duration-300 ease-in-out pt-20">
-            <div className="bg-white/98 backdrop-blur-sm shadow-xl border-t border-gray-200 h-full overflow-auto">
-              <div className="container flex flex-col space-y-4 p-6">
-                <Link 
-                  to="/sobre" 
-                  className="py-3 text-lg font-medium border-b border-gray-200 text-duo-blue hover:text-duo-blue/80 transition-colors" 
-                  onClick={closeMenu}
-                >
-                  {t('navbar.aboutDuo')}
-                </Link>
-                
-                <div className="py-3 text-lg font-medium border-b border-gray-200">
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-duo-blue">{t('navbar.products')}</span>
-                    <ChevronDown className="h-4 w-4 text-duo-blue" />
-                  </div>
-                  <div className="ml-4 flex flex-col space-y-3 mt-3">
-                    <Link 
-                      to="/produtos/robo-slim" 
-                      className="py-2 text-duo-blue/80 hover:text-duo-blue transition-colors" 
-                      onClick={closeMenu}
-                    >
-                      {t('navbar.roboSlim')}
-                    </Link>
-                    <Link 
-                      to="/produtos/robo-eva" 
-                      className="py-2 text-duo-blue/80 hover:text-duo-blue transition-colors" 
-                      onClick={closeMenu}
-                    >
-                      {t('navbar.roboEva')}
-                    </Link>
-                    <Link 
-                      to="/produtos/duo-connect" 
-                      className="py-2 text-duo-blue/80 hover:text-duo-blue transition-colors" 
-                      onClick={closeMenu}
-                    >
-                      {t('navbar.duoConnect')}
-                    </Link>
-                    <Link 
-                      to="/produtos/robo-picker" 
-                      className="py-2 text-duo-blue/80 hover:text-duo-blue transition-colors" 
-                      onClick={closeMenu}
-                    >
-                      {t('navbar.roboPicker')}
-                    </Link>
-                  </div>
-                </div>
-                
-                <Link 
-                  to="/clientes" 
-                  className="py-3 text-lg font-medium border-b border-gray-200 text-duo-blue hover:text-duo-blue/80 transition-colors" 
-                  onClick={closeMenu}
-                >
-                  {t('navbar.clients')}
-                </Link>
-                
-                <Link 
-                  to="/solucoes" 
-                  className="py-3 text-lg font-medium border-b border-gray-200 text-duo-blue hover:text-duo-blue/80 transition-colors" 
-                  onClick={closeMenu}
-                >
-                  {t('navbar.solutions')}
-                </Link>
-                
-                <Link 
-                  to="/contato" 
-                  className="py-3 text-lg font-medium border-b border-gray-200 text-duo-blue hover:text-duo-blue/80 transition-colors" 
-                  onClick={closeMenu}
-                >
-                  {t('navbar.contact')}
-                </Link>
-                
-                <Button 
-                  asChild 
-                  className="w-full mt-6 bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold py-3"
-                >
-                  <Link to="/contato" onClick={closeMenu}>{t('navbar.talkToTeam')}</Link>
-                </Button>
-              </div>
+      <div className={`
+        lg:hidden fixed inset-0 bg-white z-40 transition-transform duration-300 ease-in-out pt-20
+        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+      `}>
+        <div className="container flex flex-col space-y-4 p-4">
+          <Link to="/sobre" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
+            {t('navbar.aboutDuo')}
+          </Link>
+          <div className="py-2 text-lg font-medium border-b">
+            <div className="flex justify-between items-center mb-2">
+              <span>{t('navbar.products')}</span>
+              <ChevronDown className="h-4 w-4" />
+            </div>
+            <div className="ml-4 flex flex-col space-y-2 mt-2">
+              <Link to="/produtos/robo-slim" className="py-1" onClick={toggleMenu}>
+                {t('navbar.roboSlim')}
+              </Link>
+              <Link to="/produtos/robo-eva" className="py-1" onClick={toggleMenu}>
+                {t('navbar.roboEva')}
+              </Link>
+              <Link to="/produtos/duo-connect" className="py-1" onClick={toggleMenu}>
+                {t('navbar.duoConnect')}
+              </Link>
+              <Link to="/produtos/robo-picker" className="py-1" onClick={toggleMenu}>
+                {t('navbar.roboPicker')}
+              </Link>
             </div>
           </div>
-        </>
-      )}
+          <Link to="/clientes" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
+            {t('navbar.clients')}
+          </Link>
+          <Link to="/solucoes" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
+            {t('navbar.solutions')}
+          </Link>
+          <Link to="/contato" className="py-2 text-lg font-medium border-b" onClick={toggleMenu}>
+            {t('navbar.contact')}
+          </Link>
+          <Button asChild className="w-full mt-4 bg-duo-yellow text-duo-blue hover:bg-duo-yellow/90 font-bold">
+            <Link to="/contato" onClick={toggleMenu}>{t('navbar.talkToTeam')}</Link>
+          </Button>
+        </div>
+      </div>
     </header>
   );
 };
