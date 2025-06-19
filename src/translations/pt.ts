@@ -1,4 +1,3 @@
-
 export const pt = {
   navbar: {
     aboutDuo: "Sobre a Duo",
@@ -200,7 +199,7 @@ export const pt = {
     vision: "Visão",
     visionText: "Ser a maior empresa de robótica da América Latina",
     history: "Nossa História",
-    historyText1: "Fundada em 1992, a Duo Automation começou com foco no desenvolvimento de soluções específicas para os desafios do setor sucroenergético brasileiro. Ao longo dos anos, expandimos nosso portfólio de produtos para atender diversas necessidades do agronegócio.",
+    historyText1: "Fundada em 1992, a Duo Automation começou com foco no desenvolvimento de soluções para os desafios de diversos setores como automotiva, metal mecânica e máquinas operatrizes. Ao longo dos anos, expandimos nosso portfólio de produtos para atender as necessidades do agronegócio.",
     historyText2: "Nossa equipe multidisciplinar de engenheiros, programadores e técnicos trabalha constantemente no desenvolvimento de novas tecnologias que possam aumentar a eficiência, segurança e produtividade de nossos clientes.",
     historyText3: "Hoje, a Duo Automation é reconhecida como pioneira no segmento de robótica para o setor sucroenergético, com produtos patenteados e uma base de clientes que inclui as principais usinas e grupos do Brasil.",
     yearsMarket: "Anos de mercado",
