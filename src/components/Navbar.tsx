@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <>
       <header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-60 transition-all duration-300 ${
           isScrolled ? 'bg-white/95 shadow-md backdrop-blur-sm py-2' : 'bg-transparent py-4'
         }`}
       >
@@ -125,7 +125,7 @@ const Navbar = () => {
             
             <button
               onClick={toggleMenu}
-              className="text-duo-blue z-50 relative"
+              className="text-duo-blue z-60 relative"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -143,7 +143,7 @@ const Navbar = () => {
       
       {/* Mobile Navigation Menu */}
       <div className={`
-        lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white/98 backdrop-blur-sm shadow-xl z-50 
+        lg:hidden fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl z-50 
         transition-transform duration-300 ease-in-out pt-20
         ${isOpen ? 'translate-x-0' : 'translate-x-full'}
       `}>
