@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Download, ArrowLeft } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getEnabledProductSlugs } from '@/config/products';
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -122,8 +123,8 @@ const ProductDetail = () => {
   const productSpecs = getProductSpecs();
   const productKey = getProductKey(productId);
 
-  // Check if product exists
-  const validProducts = ['robo-slim', 'robo-eva', 'duo-connect', 'robo-picker'];
+  // Check if product exists and is enabled
+  const validProducts = getEnabledProductSlugs();
   if (!productId || !validProducts.includes(productId)) {
     return (
       <div className="pt-24 section-padding">

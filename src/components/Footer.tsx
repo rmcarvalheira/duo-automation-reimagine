@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 import { useContactForm } from '@/hooks/useContactForm';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getEnabledProducts } from '@/config/products';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -76,26 +77,13 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">{t('footer.products')}</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="/produtos/robo-slim" className="text-gray-300 hover:text-duo-yellow transition-colors">
-                  {t('navbar.roboSlim')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/produtos/robo-eva" className="text-gray-300 hover:text-duo-yellow transition-colors">
-                  {t('navbar.roboEva')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/produtos/duo-connect" className="text-gray-300 hover:text-duo-yellow transition-colors">
-                  {t('navbar.duoConnect')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/produtos/robo-picker" className="text-gray-300 hover:text-duo-yellow transition-colors">
-                  {t('navbar.roboPicker')}
-                </Link>
-              </li>
+              {getEnabledProducts().map((product) => (
+                <li key={product.slug}>
+                  <Link to={`/produtos/${product.slug}`} className="text-gray-300 hover:text-duo-yellow transition-colors">
+                    {t(`navbar.${product.navbarKey}`)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
