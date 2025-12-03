@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { getEnabledProducts } from '@/config/products';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,18 +76,15 @@ const Navbar = () => {
                 {t('navbar.products')} <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               <div className="absolute top-full left-0 mt-2 w-60 bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                <Link to="/produtos/robo-slim" className="block px-4 py-2 hover:bg-gray-100">
-                  {t('navbar.roboSlim')}
-                </Link>
-                <Link to="/produtos/robo-eva" className="block px-4 py-2 hover:bg-gray-100">
-                  {t('navbar.roboEva')}
-                </Link>
-                <Link to="/produtos/duo-connect" className="block px-4 py-2 hover:bg-gray-100">
-                  {t('navbar.duoConnect')}
-                </Link>
-                <Link to="/produtos/robo-picker" className="block px-4 py-2 hover:bg-gray-100">
-                  {t('navbar.roboPicker')}
-                </Link>
+                {getEnabledProducts().map((product) => (
+                  <Link 
+                    key={product.slug}
+                    to={`/produtos/${product.slug}`} 
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
+                    {t(`navbar.${product.navbarKey}`)}
+                  </Link>
+                ))}
               </div>
             </div>
             <Link to="/clientes" className="text-duo-blue hover:text-duo-blue/80 font-medium">
@@ -157,18 +155,16 @@ const Navbar = () => {
               <ChevronDown className="h-4 w-4" />
             </div>
             <div className="ml-4 flex flex-col space-y-3 mt-3">
-              <Link to="/produtos/robo-slim" className="py-2 text-base text-gray-700" onClick={closeMenu}>
-                {t('navbar.roboSlim')}
-              </Link>
-              <Link to="/produtos/robo-eva" className="py-2 text-base text-gray-700" onClick={closeMenu}>
-                {t('navbar.roboEva')}
-              </Link>
-              <Link to="/produtos/duo-connect" className="py-2 text-base text-gray-700" onClick={closeMenu}>
-                {t('navbar.duoConnect')}
-              </Link>
-              <Link to="/produtos/robo-picker" className="py-2 text-base text-gray-700" onClick={closeMenu}>
-                {t('navbar.roboPicker')}
-              </Link>
+              {getEnabledProducts().map((product) => (
+                <Link 
+                  key={product.slug}
+                  to={`/produtos/${product.slug}`} 
+                  className="py-2 text-base text-gray-700" 
+                  onClick={closeMenu}
+                >
+                  {t(`navbar.${product.navbarKey}`)}
+                </Link>
+              ))}
             </div>
           </div>
           <Link to="/clientes" className="py-3 text-lg font-medium text-duo-blue border-b border-gray-200" onClick={closeMenu}>

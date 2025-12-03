@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { PhoneCall, Mail, MapPin } from 'lucide-react';
 import { useContactForm } from '@/hooks/useContactForm';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { PRODUCT_CONFIG } from '@/config/products';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -137,10 +138,18 @@ const Contact = () => {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-duo-yellow focus:outline-none"
                     >
                       <option value="">{t('contact.interests.select')}</option>
-                      <option value="roboslim">{t('contact.interests.roboSlim')}</option>
-                      <option value="roboeva">{t('contact.interests.roboEva')}</option>
-                      <option value="duoconnect">{t('contact.interests.duoConnect')}</option>
-                      <option value="robopicker">{t('contact.interests.roboPicker')}</option>
+                      {PRODUCT_CONFIG.roboSlim.enabled && (
+                        <option value="roboslim">{t('contact.interests.roboSlim')}</option>
+                      )}
+                      {PRODUCT_CONFIG.roboEva.enabled && (
+                        <option value="roboeva">{t('contact.interests.roboEva')}</option>
+                      )}
+                      {PRODUCT_CONFIG.duoConnect.enabled && (
+                        <option value="duoconnect">{t('contact.interests.duoConnect')}</option>
+                      )}
+                      {PRODUCT_CONFIG.roboPicker.enabled && (
+                        <option value="robopicker">{t('contact.interests.roboPicker')}</option>
+                      )}
                       <option value="solucoes">{t('contact.interests.customSolutions')}</option>
                       <option value="outro">{t('contact.interests.other')}</option>
                     </select>

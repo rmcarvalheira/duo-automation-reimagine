@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { isProductEnabled } from '@/config/products';
 
 const ProductOverview = () => {
   const { t } = useLanguage();
 
-  const products = [
+  const allProducts = [
     {
       name: t('productOverview.roboSlim.name'),
       description: t('productOverview.roboSlim.description'),
@@ -34,6 +35,8 @@ const ProductOverview = () => {
       slug: 'robo-picker',
     },
   ];
+
+  const products = allProducts.filter(p => isProductEnabled(p.slug));
 
   return (
     <section className="section-padding gradient-bg">

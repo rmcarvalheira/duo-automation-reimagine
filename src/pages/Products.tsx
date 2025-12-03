@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { isProductEnabled } from '@/config/products';
 
 const Products = () => {
   const { t } = useLanguage();
 
-  const products = [
+  const allProducts = [
     {
       id: 'robo-slim',
       name: t('productOverview.roboSlim.name'),
@@ -72,6 +73,8 @@ const Products = () => {
       ]
     },
   ];
+
+  const products = allProducts.filter(p => isProductEnabled(p.id));
 
   return (
     <main className="pt-24">
