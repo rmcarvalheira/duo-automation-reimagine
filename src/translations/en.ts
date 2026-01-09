@@ -74,7 +74,7 @@ export const en = {
     description: "Industrial automation solutions to increase agribusiness productivity and safety, replacing labor with robots in dangerous and unhealthy jobs.",
     quickLinks: "Quick Links",
     products: "Products",
-    contact: "Contact",
+    contact: "Sales Contact",
     talkToUs: "Contact Us",
     name: "Name",
     email: "Email",

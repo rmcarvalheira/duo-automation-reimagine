@@ -75,7 +75,7 @@ export const es = {
     description: "Soluciones de automatización industrial para aumentar la productividad y seguridad del agronegocio, reemplazando mano de obra con robots en trabajos peligrosos e insalubres.",
     quickLinks: "Enlaces Rápidos",
     products: "Productos",
-    contact: "Contacto",
+    contact: "Contacto comercial",
     talkToUs: "Contáctanos",
     name: "Nombre",
     email: "Email",
