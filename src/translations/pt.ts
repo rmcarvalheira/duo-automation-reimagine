@@ -74,7 +74,7 @@ export const pt = {
     description: "Soluções de automação industrial para aumentar a produtividade e segurança do agronegócio, substituindo mão de obra por robôs em trabalhos perigosos e insalubres.",
     quickLinks: "Links Rápidos",
     products: "Produtos",
-    contact: "Contato",
+    contact: "Contato comercial",
     talkToUs: "Fale Conosco",
     name: "Nome",
     email: "E-mail",
