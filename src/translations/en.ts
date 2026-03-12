@@ -199,7 +199,7 @@ export const en = {
     vision: "Vision",
     visionText: "To be the largest robotics company in Latin America",
     history: "Our History",
-    historyText1: "Founded in 1992, Zanini Duo began with a focus on developing specific solutions for the challenges of the Brazilian sugar-energy sector. Over the years, we have expanded our product portfolio to meet various agribusiness needs.",
+    historyText1: "Founded in 1992, Duo Automation began with a focus on developing solutions for the challenges of various sectors such as automotive, metalworking and machine tools. Over the years, we have expanded our product portfolio to meet agribusiness needs. In 2025 we became part of the Zanini group, one of the most established and traditional companies in the sector.",
     historyText2: "Our multidisciplinary team of engineers, programmers and technicians constantly works on developing new technologies that can increase the efficiency, safety and productivity of our clients.",
     historyText3: "Today, Zanini Duo is recognized as a pioneer in the robotics segment for the sugar-energy sector, with patented products and a client base that includes the main mills and groups in Brazil.",
     yearsMarket: "Years in the market",
