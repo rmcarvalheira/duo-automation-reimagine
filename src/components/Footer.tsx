@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo & About */}
           <div>
-            <img src="/lovable-uploads/zanini-duo-logo.png" alt="Zanini Duo Logo" className="h-12 w-auto mb-4" />
+            <img src="/lovable-uploads/zanini-duo-logo-footer.png" alt="Zanini Duo Logo" className="h-12 w-auto mb-4" />
             <p className="mt-4 text-sm text-gray-300">
               {t('footer.description')}
             </p>
