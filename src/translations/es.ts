@@ -1,7 +1,7 @@
 
 export const es = {
   navbar: {
-    aboutDuo: "Acerca de Duo",
+    aboutDuo: "Acerca de Zanini Duo",
     products: "Productos",
     clients: "Clientes y Casos",
     solutions: "Soluciones de Automatización",
@@ -29,7 +29,7 @@ export const es = {
     },
     patent: {
       title: "Patente",
-      description: "Productos exclusivos desarrollados y patentados por Duo Automation."
+      description: "Productos exclusivos desarrollados y patentados por Zanini Duo."
     },
     results: {
       title: "Resultados",
@@ -43,7 +43,7 @@ export const es = {
   },
   productOverview: {
     title: "Nuestros Productos",
-    subtitle: "Descubre las soluciones de automatización desarrolladas por Duo para aumentar la productividad y seguridad de tu industria",
+    subtitle: "Descubre las soluciones de automatización desarrolladas por Zanini Duo para aumentar la productividad y seguridad de tu industria",
     seeMore: "Saber más",
     seeAll: "Ver todos los productos",
     roboSlim: {
@@ -192,17 +192,17 @@ export const es = {
     }
   },
   about: {
-    title: "Acerca de Duo Automation",
-    description1: "Duo Automation es líder en soluciones de automatización industrial para el sector sucroenergético, desarrollando tecnologías que aumentan la productividad y seguridad en las usinas.",
+    title: "Acerca de Zanini Duo",
+    description1: "Zanini Duo es líder en soluciones de automatización industrial para el sector sucroenergético, desarrollando tecnologías que aumentan la productividad y seguridad en las usinas.",
     description2: "Nuestra empresa nació de la necesidad de traer innovación al sector agroindustrial brasileño, desarrollando robots y sistemas que sustituyen mano de obra humana en trabajos peligrosos e insalubres.",
     mission: "Misión",
     missionText: "Aumentar la productividad de la agroindustria y salvar vidas sustituyendo mano de obra por robots en trabajos peligrosos e insalubres",
     vision: "Visión",
     visionText: "Ser la mayor empresa de robótica de América Latina",
     history: "Nuestra Historia",
-    historyText1: "Fundada en 1992, Duo Automation comenzó con enfoque en desarrollar soluciones específicas para los desafíos del sector sucroenergético brasileño. A lo largo de los años, expandimos nuestro portafolio de productos para atender diversas necesidades de la agroindustria.",
+    historyText1: "Fundada en 1992, Zanini Duo comenzó con enfoque en desarrollar soluciones específicas para los desafíos del sector sucroenergético brasileño. A lo largo de los años, expandimos nuestro portafolio de productos para atender diversas necesidades de la agroindustria.",
     historyText2: "Nuestro equipo multidisciplinario de ingenieros, programadores y técnicos trabaja constantemente en el desarrollo de nuevas tecnologías que puedan aumentar la eficiencia, seguridad y productividad de nuestros clientes.",
-    historyText3: "Hoy, Duo Automation es reconocida como pionera en el segmento de robótica para el sector sucroenergético, con productos patentados y una base de clientes que incluye las principales usinas y grupos de Brasil.",
+    historyText3: "Hoy, Zanini Duo es reconocida como pionera en el segmento de robótica para el sector sucroenergético, con productos patentados y una base de clientes que incluye las principales usinas y grupos de Brasil.",
     yearsMarket: "Años en el mercado",
     clientsServed: "Clientes atendidos",
     servicePoles: "Polos de atención",
@@ -210,7 +210,7 @@ export const es = {
   },
   products: {
     title: "Nuestros Productos",
-    subtitle: "Conoce las soluciones de automatización desarrolladas por Duo para aumentar la productividad y seguridad de tu industria",
+    subtitle: "Conoce las soluciones de automatización desarrolladas por Zanini Duo para aumentar la productividad y seguridad de tu industria",
     features: "Características:",
     seeDetails: "Ver detalles"
   },
@@ -232,7 +232,7 @@ export const es = {
   },
   solutions: {
     title: "Soluciones de Automatización",
-    subtitle: "Además de los productos estándar, Duo Automation desarrolla soluciones personalizadas para las necesidades específicas de tu industria.",
+    subtitle: "Además de los productos estándar, Zanini Duo desarrolla soluciones personalizadas para las necesidades específicas de tu industria.",
     customProjects: "Proyectos a medida",
     customDescription1: "Nuestro equipo de ingenieros y técnicos altamente calificados desarrolla soluciones personalizadas para automatizar procesos específicos de tu industria, considerando tus particularidades y necesidades únicas.",
     customDescription2: "Cada proyecto es tratado de forma exclusiva, desde el análisis inicial hasta la implementación y soporte continuo, garantizando que la solución propuesta atienda perfectamente a los desafíos y objetivos de tu negocio.",
@@ -265,7 +265,7 @@ export const es = {
   },
   clients: {
     title: "Clientes y Casos",
-    subtitle: "Conoce las empresas que confían en las soluciones de Duo Automation y los resultados que alcanzaron",
+    subtitle: "Conoce las empresas que confían en las soluciones de Zanini Duo y los resultados que alcanzaron",
     resultsAchieved: "Resultados alcanzados",
     caseStudy1: {
       title: "Ganancias en decenas de usinas en todo Brasil",

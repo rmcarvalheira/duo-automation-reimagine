@@ -1,6 +1,6 @@
 export const en = {
   navbar: {
-    aboutDuo: "About Duo",
+    aboutDuo: "About Zanini Duo",
     products: "Products",
     clients: "Clients & Cases",
     solutions: "Automation Solutions",
@@ -28,7 +28,7 @@ export const en = {
     },
     patent: {
       title: "Patent",
-      description: "Exclusive products developed and patented by Duo Automation."
+      description: "Exclusive products developed and patented by Zanini Duo."
     },
     results: {
       title: "Results",
@@ -42,7 +42,7 @@ export const en = {
   },
   productOverview: {
     title: "Our Products",
-    subtitle: "Discover the automation solutions developed by Duo to increase the productivity and safety of your industry",
+    subtitle: "Discover the automation solutions developed by Zanini Duo to increase the productivity and safety of your industry",
     seeMore: "Learn more",
     seeAll: "See all products",
     roboSlim: {
@@ -191,17 +191,17 @@ export const en = {
     }
   },
   about: {
-    title: "About Duo Automation",
-    description1: "Duo Automation is a leader in industrial automation solutions for the sugar-energy sector, developing technologies that increase productivity and safety in mills.",
+    title: "About Zanini Duo",
+    description1: "Zanini Duo is a leader in industrial automation solutions for the sugar-energy sector, developing technologies that increase productivity and safety in mills.",
     description2: "Our company was born from the need to bring innovation to the Brazilian agro-industrial sector, developing robots and systems that replace human labor in dangerous and unhealthy jobs.",
     mission: "Mission",
     missionText: "Increase agribusiness productivity and save lives by replacing labor with robots in dangerous and unhealthy jobs",
     vision: "Vision",
     visionText: "To be the largest robotics company in Latin America",
     history: "Our History",
-    historyText1: "Founded in 1992, Duo Automation began with a focus on developing specific solutions for the challenges of the Brazilian sugar-energy sector. Over the years, we have expanded our product portfolio to meet various agribusiness needs.",
+    historyText1: "Founded in 1992, Zanini Duo began with a focus on developing specific solutions for the challenges of the Brazilian sugar-energy sector. Over the years, we have expanded our product portfolio to meet various agribusiness needs.",
     historyText2: "Our multidisciplinary team of engineers, programmers and technicians constantly works on developing new technologies that can increase the efficiency, safety and productivity of our clients.",
-    historyText3: "Today, Duo Automation is recognized as a pioneer in the robotics segment for the sugar-energy sector, with patented products and a client base that includes the main mills and groups in Brazil.",
+    historyText3: "Today, Zanini Duo is recognized as a pioneer in the robotics segment for the sugar-energy sector, with patented products and a client base that includes the main mills and groups in Brazil.",
     yearsMarket: "Years in the market",
     clientsServed: "Clients served",
     servicePoles: "Service hubs",
@@ -209,7 +209,7 @@ export const en = {
   },
   products: {
     title: "Our Products",
-    subtitle: "Discover the automation solutions developed by Duo to increase the productivity and safety of your industry",
+    subtitle: "Discover the automation solutions developed by Zanini Duo to increase the productivity and safety of your industry",
     features: "Features:",
     seeDetails: "See details"
   },
@@ -231,7 +231,7 @@ export const en = {
   },
   solutions: {
     title: "Automation Solutions",
-    subtitle: "In addition to standard products, Duo Automation develops customized solutions for your industry's specific needs.",
+    subtitle: "In addition to standard products, Zanini Duo develops customized solutions for your industry's specific needs.",
     customProjects: "Custom projects",
     customDescription1: "Our team of highly qualified engineers and technicians develops personalized solutions to automate specific processes in your industry, considering your particularities and unique needs.",
     customDescription2: "Each project is treated exclusively, from initial analysis to implementation and ongoing support, ensuring that the proposed solution perfectly meets your business challenges and objectives.",
@@ -264,7 +264,7 @@ export const en = {
   },
   clients: {
     title: "Clients & Cases",
-    subtitle: "Meet the companies that trust Duo Automation solutions and the results they achieved",
+    subtitle: "Meet the companies that trust Zanini Duo solutions and the results they achieved",
     resultsAchieved: "Results achieved",
     caseStudy1: {
       title: "Gains in dozens of mills throughout Brazil",

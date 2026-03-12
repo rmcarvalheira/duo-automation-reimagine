@@ -160,7 +160,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-white/20 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Duo Automation. {t('footer.copyright')}</p>
+          <p>© {new Date().getFullYear()} Zanini Duo. {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
