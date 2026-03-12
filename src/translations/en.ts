@@ -1,6 +1,6 @@
 export const en = {
   navbar: {
-    aboutDuo: "About Zanini Duo",
+    aboutDuo: "About us",
     products: "Products",
     clients: "Clients & Cases",
     solutions: "Automation Solutions",
