@@ -15,11 +15,11 @@ const About = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div>
-                <img 
-                  src="/lovable-uploads/12b14934-fe26-4359-a5e7-5e372359ccae.png" 
-                  alt={t('about.title')} 
-                  className="rounded-lg shadow-lg w-full h-auto" 
-                />
+                <img
+                  src="/lovable-uploads/12b14934-fe26-4359-a5e7-5e372359ccae.png"
+                  alt={t('about.title')}
+                  className="rounded-lg shadow-lg w-full h-auto" />
+                
               </div>
               <div>
                 <p className="body-lg mb-4">
@@ -62,7 +62,7 @@ const About = () => {
                 <p className="text-gray-700">{t('about.yearsMarket')}</p>
               </div>
               <div className="p-6 bg-white shadow-md rounded-lg border border-gray-100">
-                <div className="text-3xl text-duo-yellow font-bold mb-2">50+</div>
+                <div className="text-3xl text-duo-yellow font-bold mb-2">90+</div>
                 <p className="text-gray-700">{t('about.clientsServed')}</p>
               </div>
               <div className="p-6 bg-white shadow-md rounded-lg border border-gray-100">
@@ -80,11 +80,11 @@ const About = () => {
             <h2 className="heading-md text-duo-blue mb-8 text-center">{t('about.servicePolesTitle')}</h2>
             
             <div className="bg-white rounded-lg shadow-md p-6">
-              <img 
-                src="/lovable-uploads/88efcfb8-a005-4d94-984f-9ed366a53ef9.png" 
-                alt={t('about.servicePolesTitle')} 
-                className="w-full h-auto rounded-lg mb-6" 
-              />
+              <img
+                src="/lovable-uploads/88efcfb8-a005-4d94-984f-9ed366a53ef9.png"
+                alt={t('about.servicePolesTitle')}
+                className="w-full h-auto rounded-lg mb-6" />
+              
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <ul className="space-y-2">
@@ -124,8 +124,8 @@ const About = () => {
           </div>
         </div>
       </section>
-    </main>
-  );
+    </main>);
+
 };
 
 export default About;
