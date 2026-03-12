@@ -200,7 +200,7 @@ export const es = {
     vision: "Visión",
     visionText: "Ser la mayor empresa de robótica de América Latina",
     history: "Nuestra Historia",
-    historyText1: "Fundada en 1992, Zanini Duo comenzó con enfoque en desarrollar soluciones específicas para los desafíos del sector sucroenergético brasileño. A lo largo de los años, expandimos nuestro portafolio de productos para atender diversas necesidades de la agroindustria.",
+    historyText1: "Fundada en 1992, Duo Automation comenzó con enfoque en desarrollar soluciones para los desafíos de diversos sectores como automotriz, metalmecánica y máquinas herramienta. A lo largo de los años, expandimos nuestro portafolio de productos para atender las necesidades de la agroindustria. En 2025 nos convertimos en parte del grupo Zanini, una de las empresas más consagradas y tradicionales del sector.",
     historyText2: "Nuestro equipo multidisciplinario de ingenieros, programadores y técnicos trabaja constantemente en el desarrollo de nuevas tecnologías que puedan aumentar la eficiencia, seguridad y productividad de nuestros clientes.",
     historyText3: "Hoy, Zanini Duo es reconocida como pionera en el segmento de robótica para el sector sucroenergético, con productos patentados y una base de clientes que incluye las principales usinas y grupos de Brasil.",
     yearsMarket: "Años en el mercado",
