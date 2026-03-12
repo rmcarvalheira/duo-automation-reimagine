@@ -1,6 +1,6 @@
 export const pt = {
   navbar: {
-    aboutDuo: "Sobre a Zanini Duo",
+    aboutDuo: "Sobre nós",
     products: "Produtos",
     clients: "Clientes & Casos",
     solutions: "Soluções de Automação",
