@@ -54,7 +54,7 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				duo: {
-          blue: '#002654',
+          blue: '#0067B1',
           yellow: '#FFE100',
         },
 			},

@@ -60,8 +60,8 @@ const Navbar = () => {
         <nav className="container flex justify-between items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/52fd567d-8a0c-47bd-a3dc-60e1af2d60da.png" 
-              alt="Duo Automation Logo" 
+              src="/lovable-uploads/zanini-duo-logo.png" 
+              alt="Zanini Duo Logo" 
               className="h-12 w-auto"
             />
           </Link>

@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: Logo & About */}
           <div>
-            <img src="/lovable-uploads/52fd567d-8a0c-47bd-a3dc-60e1af2d60da.png" alt="Duo Automation Logo" className="h-12 w-auto mb-4" />
+            <img src="/lovable-uploads/zanini-duo-logo.png" alt="Zanini Duo Logo" className="h-12 w-auto mb-4" />
             <p className="mt-4 text-sm text-gray-300">
               {t('footer.description')}
             </p>
@@ -160,7 +160,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-white/20 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Duo Automation. {t('footer.copyright')}</p>
+          <p>© {new Date().getFullYear()} Zanini Duo. {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>
